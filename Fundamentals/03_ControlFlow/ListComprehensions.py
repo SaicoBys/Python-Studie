@@ -53,6 +53,18 @@ print(adjusted_numbers)
 # Salida: [30, -40, 90, -80, 150]
 
 # ========================================
+# Resumen
+# ========================================
+
+"""
+## 📌 Resumen
+- Las comprensiones de listas permiten crear listas de forma concisa.
+- Se componen de una expresión, un bucle `for`, y opcionalmente condiciones `if` o expresiones ternarias (`if-else`).
+- Son más legibles y eficientes que los bucles tradicionales en muchos casos.
+- Puedes aplicar filtros con `if` o lógica condicional con `if-else` directamente dentro de la comprensión.
+"""
+
+# ========================================
 # Ejercicios de Práctica
 # ========================================
 
