@@ -111,5 +111,48 @@ Comprender el uso de parámetros mejora la flexibilidad y reutilización de las 
 """
 
 # ========================================
+# 🧠 Ejercicios de Práctica
+# ========================================
+
+# ----------------------------------------
+# 1️⃣ greet_user(name)
+# ----------------------------------------
+
+"""
+Crea una función `greet_user` que reciba un nombre y devuelva un saludo personalizado.
+Ejemplo:
+greet_user("Alice") -> "Hola, Alice!"
+"""
+
+# ----------------------------------------
+# 2️⃣ calcular_precio_total(precio, cantidad)
+# ----------------------------------------
+
+"""
+Crea una función `calcular_precio_total` que reciba un precio y una cantidad, y retorne el total a pagar.
+Ejemplo:
+calcular_precio_total(10, 3) -> 30
+"""
+
+# ----------------------------------------
+# 3️⃣ multiplicar_lista(*numeros)
+# ----------------------------------------
+
+"""
+Crea una función `multiplicar_lista` que reciba cualquier cantidad de números usando *args y devuelva el resultado de multiplicarlos todos.
+Ejemplo:
+multiplicar_lista(2, 3, 4) -> 24
+"""
+
+# ----------------------------------------
+# 4️⃣ mostrar_perfil(**datos)
+# ----------------------------------------
+
+"""
+Crea una función `mostrar_perfil` que reciba datos personales como nombre, edad y país utilizando **kwargs, e imprima el perfil del usuario en formato:
+"Nombre: ___, Edad: ___, País: ___"
+"""
+
+# ========================================
 # Fin del Documento
 # ========================================
