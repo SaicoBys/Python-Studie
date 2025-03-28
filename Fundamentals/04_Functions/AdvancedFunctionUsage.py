@@ -129,6 +129,13 @@ print(Persona.crear_desde_edad(25).descripcion)  # Desconocido tiene 25 años.
 # 6. Funciones de Orden Superior: map(), filter(), zip(), reduce()
 # ========================================
 
+"""
+📌 `map()` aplica una función a cada elemento de una lista.
+📌 `filter()` filtra elementos según una condición.
+📌 `zip()` combina múltiples listas en tuplas.
+📌 `reduce()` aplica una función acumulativa a una lista.
+"""
+
 from functools import reduce
 
 numeros = [1, 2, 3, 4, 5]
