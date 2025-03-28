@@ -28,9 +28,9 @@ def nombre_funcion():
 # Ejemplo básico de función
 def saludar():
     """Imprime un mensaje de bienvenida."""
-    print("¡Hola, bienvenido a Python!")
+    print("¡Hola, bienvenido a Python!")  # Imprime el mensaje de saludo
 
-saludar()  # Llamada a la función
+saludar()  # Llamada a la función que ejecuta el saludo
 
 # ========================================
 # 2. Parámetros en Funciones
@@ -47,9 +47,9 @@ Las funciones pueden aceptar parámetros para recibir valores al ser llamadas.
 # Ejemplo de parámetros
 def informacion(nombre, edad=18):
     """Muestra información de una persona."""
-    print(f"Nombre: {nombre}, Edad: {edad}")
+    print(f"Nombre: {nombre}, Edad: {edad}")  # Imprime el nombre y la edad
 
-informacion("Carlos", 25)  # Parámetros explícitos
+informacion("Carlos", 25)  # Parámetros explícitos: nombre y edad
 informacion("Ana")  # Usa el valor por defecto de `edad`
 
 # ========================================
@@ -63,19 +63,19 @@ Las funciones pueden devolver valores usando `return`. Esto permite capturar y u
 # Retorno de un solo valor
 def cuadrado(num):
     """Devuelve el cuadrado de un número."""
-    return num ** 2
+    return num ** 2  # Calcula el cuadrado del número y lo devuelve
 
-print(cuadrado(4))  # 16
+print(cuadrado(4))  # 16, llama a la función y muestra el resultado
 
 # Retorno de múltiples valores
 def operaciones(a, b):
     """Devuelve la suma y la resta de dos números."""
-    suma = a + b
-    resta = a - b
-    return suma, resta
+    suma = a + b  # Calcula la suma
+    resta = a - b  # Calcula la resta
+    return suma, resta  # Devuelve ambos resultados
 
-resultado_suma, resultado_resta = operaciones(10, 5)
-print(f"Suma: {resultado_suma}, Resta: {resultado_resta}")
+resultado_suma, resultado_resta = operaciones(10, 5)  # Llama a la función y captura los resultados
+print(f"Suma: {resultado_suma}, Resta: {resultado_resta}")  # Imprime los resultados
 
 # ========================================
 # 4. Parámetros con Valores por Defecto
@@ -88,9 +88,9 @@ se usará el valor por defecto.
 
 def presentar(nombre="Usuario", edad=18):
     """Muestra un mensaje con nombre y edad con valores por defecto."""
-    print(f"Nombre: {nombre}, Edad: {edad}")
+    print(f"Nombre: {nombre}, Edad: {edad}")  # Imprime el nombre y la edad
 
-presentar("Carlos", 25)
+presentar("Carlos", 25)  # Llama a la función con parámetros específicos
 presentar()  # Usa los valores por defecto
 
 # ========================================
@@ -105,17 +105,17 @@ presentar()  # Usa los valores por defecto
 # Uso de *args
 def sumar_todo(*numeros):
     """Suma todos los números proporcionados."""
-    return sum(numeros)
+    return sum(numeros)  # Suma todos los números en la tupla y devuelve el resultado
 
-print(sumar_todo(1, 2, 3, 4, 5))  # 15
+print(sumar_todo(1, 2, 3, 4, 5))  # 15, llama a la función y muestra la suma
 
 # Uso de **kwargs
 def mostrar_info(**datos):
     """Muestra información proporcionada como clave-valor."""
-    for clave, valor in datos.items():
-        print(f"{clave}: {valor}")
+    for clave, valor in datos.items():  # Itera sobre los pares clave-valor
+        print(f"{clave}: {valor}")  # Imprime cada par clave-valor
 
-mostrar_info(nombre="Ana", edad=22, ciudad="Madrid")
+mostrar_info(nombre="Ana", edad=22, ciudad="Madrid")  # Llama a la función con datos
 
 # ========================================
 # Resumen
@@ -130,6 +130,51 @@ mostrar_info(nombre="Ana", edad=22, ciudad="Madrid")
 - Se pueden definir **valores por defecto** en los parámetros de una función.
 - Las funciones pueden devolver **uno o múltiples valores**.
 """
+
+# ========================================
+# Ejercicios de Práctica
+# ========================================
+
+"""
+## 🧠 Ejercicios de práctica sobre funciones
+
+1️⃣ Escribe una función llamada `saludo_personalizado(nombre)` que imprima un saludo personalizado usando el nombre proporcionado.
+
+2️⃣ Crea una función `area_rectangulo(base, altura)` que calcule y retorne el área de un rectángulo.
+
+3️⃣ Define una función `multiplicar_lista(*numeros)` que use `*args` para multiplicar todos los números pasados como argumento.
+
+4️⃣ Crea una función `mostrar_perfil(**datos)` que reciba cualquier cantidad de datos (nombre, edad, ciudad, etc.) y los imprima en formato clave: valor.
+
+5️⃣ Crea una función `calculo_salario(base, bonus=0)` que devuelva el salario total sumando base + bonus, siendo bonus un parámetro opcional.
+
+✅ Prueba a resolverlos aplicando lo aprendido en este documento.
+"""
+
+# --------------------------------------------------
+# 1️⃣ saludo_personalizado(nombre)
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 2️⃣ area_rectangulo(base, altura)
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 3️⃣ multiplicar_lista(*numeros)
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 4️⃣ mostrar_perfil(**datos)
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 5️⃣ calculo_salario(base, bonus=0)
+# --------------------------------------------------
+
 
 # ========================================
 # Fin del Documento
