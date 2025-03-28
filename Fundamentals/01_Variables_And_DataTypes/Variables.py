@@ -120,3 +120,50 @@ print(saludo)  # Salida: Hola, Alice
 # ========================================
 # Fin del Documento
 # ========================================
+
+# ========================================
+# Ejercicios de Práctica
+# ========================================
+
+"""
+## 🧠 Ejercicios de práctica sobre variables
+
+1️⃣ Crea una variable llamada `ciudad` y asígnale el nombre de tu ciudad.
+
+2️⃣ Declara tres variables: `producto`, `precio`, y `disponible` con los siguientes valores: 
+   - producto: cualquier texto (str)
+   - precio: un número decimal (float)
+   - disponible: un valor booleano (bool)
+
+3️⃣ Reasigna el valor de la variable `ciudad` a una nueva ciudad y muestra su valor.
+
+4️⃣ Declara una variable llamada `x` con valor 7 y otra `y` con valor 3. Calcula su suma, resta, multiplicación y división.
+
+5️⃣ Concatena dos variables de tipo string y muéstralas en pantalla usando `print()`.
+
+✅ Intenta resolverlos en tu editor antes de ver las respuestas.
+"""
+
+# --------------------------------------------------
+# 1️⃣ Crea una variable llamada `ciudad`
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 2️⃣ Declara `producto`, `precio`, `disponible`
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 3️⃣ Reasigna el valor de `ciudad`
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 4️⃣ Operaciones con `x` y `y`
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 5️⃣ Concatenación de strings
+# --------------------------------------------------

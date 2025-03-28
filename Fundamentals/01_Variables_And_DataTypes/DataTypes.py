@@ -18,41 +18,41 @@ Comprender estos tipos de datos es esencial para manipular correctamente la info
 # Enteros
 # ========================================
 
-edad = 30  # Asignación de un entero
-cantidad_alumnos = 25  # Otro ejemplo de entero
+edad = 30  # Asignación de un número entero a la variable 'edad'
+cantidad_alumnos = 25  # Asignación de un número entero a la variable 'cantidad_alumnos'
 
-print(f"Edad: {edad}, Alumnos: {cantidad_alumnos}")
+print(f"Edad: {edad}, Alumnos: {cantidad_alumnos}")  # Imprime los valores usando f-strings
 
 # ========================================
 # Números de punto flotante
 # ========================================
 
-precio = 19.99  # Asignación de un flotante
-pi = 3.14159  # Constante matemática pi
-temperatura = -5.6  # Número negativo con decimales
+precio = 19.99  # Asignación de un número decimal a 'precio'
+pi = 3.14159  # Asignación de un número decimal a 'pi'
+temperatura = -5.6  # Asignación de un número decimal negativo a 'temperatura'
 
-print(f"Precio: {precio}, Pi: {pi}, Temperatura: {temperatura}")
+print(f"Precio: {precio}, Pi: {pi}, Temperatura: {temperatura}")  # Imprime los valores
 
 # ========================================
 # Cadenas de texto
 # ========================================
 
-nombre = "María"  # Una simple cadena de texto
-mensaje = '¡Hola, mundo!'  # Otra cadena usando comillas simples
+nombre = "María"  # Cadena de texto con comillas dobles
+mensaje = '¡Hola, mundo!'  # Cadena de texto con comillas simples
 
-print(f"Nombre: {nombre}, Mensaje: {mensaje}")
+print(f"Nombre: {nombre}, Mensaje: {mensaje}")  # Imprime nombre y mensaje
 
 # ========================================
 # Booleanos
 # ========================================
 
-es_mayor_de_edad = True  # Verdadero
-tiene_descuento = False  # Falso
+es_mayor_de_edad = True  # Variable booleana con valor True
+tiene_descuento = False  # Variable booleana con valor False
 
-if es_mayor_de_edad:
-    print("Puede ingresar al evento.")
+if es_mayor_de_edad:  # Condición evaluada como verdadera
+    print("Puede ingresar al evento.")  # Se ejecuta si la condición es verdadera
 else:
-    print("No puede ingresar al evento.")
+    print("No puede ingresar al evento.")  # Se ejecuta si la condición es falsa
 
 # ========================================
 # Datos Compuestos
@@ -71,36 +71,39 @@ Además de los tipos básicos, Python permite estructuras de datos más compleja
 # Listas
 # ========================================
 
-frutas = ["manzana", "banana", "cereza"]  # Lista de frutas
-frutas.append("naranja")  # Agregar elemento a la lista
-print(f"Lista de frutas: {frutas}")
+frutas = ["manzana", "banana", "cereza"]  # Lista de cadenas de texto
+frutas.append("naranja")  # Agrega un nuevo elemento al final de la lista
+
+print(f"Lista de frutas: {frutas}")  # Imprime la lista actualizada
 
 # ========================================
 # Tuplas
 # ========================================
 
-dimensiones = (20, 50, 30)  # Dimensiones como tupla
-print(f"Dimensiones: {dimensiones}")
+dimensiones = (20, 50, 30)  # Tupla con tres elementos
+
+print(f"Dimensiones: {dimensiones}")  # Imprime los valores de la tupla
 
 # ========================================
 # Diccionarios
 # ========================================
 
 usuario = {
-    "nombre": "Juan",
-    "edad": 28,
-    "email": "juan@example.com"
+    "nombre": "Juan",  # Clave: 'nombre' con valor 'Juan'
+    "edad": 28,        # Clave: 'edad' con valor entero
+    "email": "juan@example.com"  # Clave: 'email' con valor string
 }  # Diccionario con información de usuario
 
-print(f"Nombre del usuario: {usuario['nombre']}, Email: {usuario['email']}")
+print(f"Nombre del usuario: {usuario['nombre']}, Email: {usuario['email']}")  # Acceso por clave
 
 # ========================================
 # Conjuntos
 # ========================================
 
 colores = {"rojo", "verde", "azul"}  # Conjunto de colores
-colores.add("amarillo")  # Agregar un elemento único
-print(f"Colores disponibles: {colores}")
+colores.add("amarillo")  # Agrega 'amarillo' si no está presente
+
+print(f"Colores disponibles: {colores}")  # Imprime todos los elementos únicos del conjunto
 
 # ========================================
 # Conversión de Tipos (Type Casting)
@@ -115,9 +118,10 @@ Python permite convertir entre tipos de datos mediante funciones integradas:
 - `bool()`: Convierte a booleano.
 """
 
-numero_texto = "100"
+numero_texto = "100"  # String con un número
 numero_convertido = int(numero_texto)  # Convierte string a entero
-print(f"Número convertido: {numero_convertido}, Tipo: {type(numero_convertido)}")
+
+print(f"Número convertido: {numero_convertido}, Tipo: {type(numero_convertido)}")  # Muestra el valor convertido y su tipo
 
 # ========================================
 # Resumen
