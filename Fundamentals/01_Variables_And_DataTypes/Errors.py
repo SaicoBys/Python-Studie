@@ -32,10 +32,10 @@ except SyntaxError as e:
 Un `NameError` ocurre cuando intentamos usar una variable que no ha sido definida.
 """
 
-try:
-    print(variable_inexistente)  # Variable no definida
-except NameError as e:
-    print("NameError:", e)
+# try:
+#     print(variable_inexistente)  # Variable no definida
+# except NameError as e:
+#     print("NameError:", e)
 
 # ========================================
 # Ejemplo de ZeroDivisionError
