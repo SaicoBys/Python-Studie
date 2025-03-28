@@ -19,10 +19,10 @@ No necesitan declaración previa ni especificar el tipo de dato.
 # ========================================
 
 # Asignación de diferentes tipos de datos a variables
-nombre = "Alice"  # Variable de tipo string
-edad = 25         # Variable de tipo entero
-altura = 1.75     # Variable de tipo float
-es_estudiante = True  # Variable booleana
+nombre = "Alice"  # Variable tipo string (cadena de texto)
+edad = 25         # Variable tipo int (entero)
+altura = 1.75     # Variable tipo float (decimal)
+es_estudiante = True  # Variable tipo bool (booleano)
 
 # Imprimir valores
 print(nombre)  # Salida: Alice
@@ -41,10 +41,10 @@ Python permite cambiar el tipo de dato de una variable durante la ejecución.
 dato = 10        # `dato` es un entero
 print(dato)      # Salida: 10
 
-dato = "Hola"    # Ahora `dato` es un string
+dato = "Hola"    # Ahora `dato` es un string (cambia de int a string)
 print(dato)      # Salida: Hola
 
-dato = 3.14      # Ahora `dato` es un float
+dato = 3.14      # Ahora `dato` es un float (cambia de string a float)
 print(dato)      # Salida: 3.14
 
 # ========================================
@@ -92,16 +92,16 @@ Las variables pueden usarse en operaciones matemáticas y concatenaciones de str
 """
 
 # Operaciones matemáticas
-a = 10
-b = 5
-suma = a + b
-multiplicacion = a * b
+a = 10  # tipo int
+b = 5   # tipo int
+suma = a + b  # int + int
+multiplicacion = a * b  # int * int
 
 print(suma)          # Salida: 15
 print(multiplicacion)  # Salida: 50
 
 # Concatenación de strings
-saludo = "Hola, " + nombre
+saludo = "Hola, " + nombre  # string + string
 print(saludo)  # Salida: Hola, Alice
 
 # ========================================
