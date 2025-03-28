@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progreso Diario - Python</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    body {
+      font-family: 'Fira Code', monospace;
+      background: linear-gradient(135deg, #000000 0%, #0d0d0d 100%);
+      color: #00ff00;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      height: 100vh;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .light {
+      background: #ffffff;
+      color: #000000;
+    }
+
+    .light .card {
+      background: #f0f0f0;
+      color: #000;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    .card {
+      background: #0d0d0d;
+      padding: 30px;
+      border-radius: 10px;
+      min-height: auto;
+      max-width: 520px;
+      width: 90vw;
+      box-shadow: 0 0 20px rgba(0, 255, 0, 0.4), 0 0 40px rgba(0, 255, 0, 0.1);
+      animation: fadeIn 1s ease-out;
+      transition: transform 0.3s ease;
+      align-items: center;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: scale(1.01);
+    }
+
+    .terminal-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 15px;
+    }
+
+    .dot {
+      height: 12px;
+      width: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .red { background: #ff5f56; }
+    .yellow { background: #ffbd2e; }
+    .green { background: #27c93f; }
+
+    .title {
+      font-size: 24px;
+      color: #00ff00;
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00;
+    }
+
+    .subtitle {
+      color: #00cc66;
+      margin-bottom: 20px;
+    }
+
+    .code {
+      background: #000000;
+      padding: 10px;
+      border-radius: 6px;
+      font-family: 'Fira Code', monospace;
+      font-size: 14px;
+      color: #00ff00;
+      white-space: pre-wrap;
+      line-height: 1.4;
+      margin-bottom: 20px;
+    }
+
+    .link {
+      font-size: 13px;
+      color: #00ff00;
+      text-align: center;
+      margin-top: 10px;
+      opacity: 0.7;
+    }
+
+    .copy-button {
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      font-family: 'Fira Code', monospace;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    .copy-button:hover {
+      background-color: rgba(0, 255, 0, 0.1);
+    }
+
+    .log {
+      font-family: 'Fira Code', monospace;
+      color: #00ff00;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .footer {
+      font-size: 14px;
+      color: rgba(0, 255, 0, 0.5);
+      text-align: right;
+    }
+
+    .footer::after {
+      content: '▌';
+      animation: blink 1s infinite step-end;
+    }
+
+    .header {
+      color: #00ff00;
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ff00;
+    }
+
+    .theme-toggle {
+      background-color: transparent;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      font-family: 'Fira Code', monospace;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .theme-toggle:hover {
+      background-color: rgba(0, 255, 0, 0.1);
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        padding: 20px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .subtitle {
+        font-size: 16px;
+      }
+
+      .code {
+        font-size: 13px;
+      }
+
+      .header {
+        font-size: 22px;
+        margin-bottom: 15px;
+      }
+
+      .copy-button {
+        font-size: 12px;
+        padding: 4px 8px;
+      }
+
+      .log {
+        font-size: 12px;
+      }
+
+      .footer {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="header">🚀 Registro Diario de Aprendizaje</h1>
+  <div class="card">
+    <div class="terminal-bar">
+      <span class="dot red"></span>
+      <span class="dot yellow"></span>
+      <span class="dot green"></span>
+    </div>
+    <button class="theme-toggle" onclick="document.body.classList.toggle('light')">🌗 Cambiar tema</button>
+
+    <div class="title">📘 Aprendiendo Python - Día 12</div>
+    <div class="subtitle">Tema: List Comprehensions</div>
+
+    <div class="code">
+      numbers = [1, 2, 3, 4, 5]<br>
+      doubled = [x * 2 for x in numbers]<br>
+      print(doubled)
+    </div>
+
+    <div class="link">🔗 Ver más en: github.com/saicobys</div>
+    <button class="copy-button" onclick="copyCode()">📋 Copiar código</button>
+    <div class="footer">$ @saicobys</div>
+    <div class="log">>>> Ejecutando código...</div>
+    <div class="log">[2, 4, 6, 8, 10]</div>
+    <div id="ip" class="log">📡 IP: obteniendo...</div>
+  </div>
+  <script>
+    function copyCode() {
+      const text = `numbers = [1, 2, 3, 4, 5]
+doubled = [x * 2 for x in numbers]
+print(doubled)`;
+      navigator.clipboard.writeText(text);
+      alert("¡Código copiado!");
+    }
+    
+    fetch('https://ipapi.co/json/')
+      .then(response => response.json())
+      .then(data => {
+        const ipInfo = `📡 IP: ${data.ip} — 🌍 ${data.city}, ${data.region}, ${data.country_name}`;
+        document.getElementById('ip').innerText = ipInfo;
+      })
+      .catch(error => {
+        document.getElementById('ip').innerText = `📡 No se pudo obtener la IP`;
+      });
+  </script>
+</body>
+</html>
