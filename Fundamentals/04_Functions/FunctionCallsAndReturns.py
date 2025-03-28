@@ -142,13 +142,56 @@ print(f"Precio sin descuento: {precio_sin_descuento}")  # Salida: Precio sin des
 # ========================================
 
 """
-📌 **Resumen de Llamadas y Retornos en Funciones**:
-- Las funciones se llaman con `nombre_funcion()`.
-- `return` devuelve valores que pueden ser almacenados o usados posteriormente.
-- `print()` solo muestra información en pantalla, pero no devuelve valores.
-- Se pueden retornar múltiples valores, que son empaquetados en una tupla.
-- Las funciones pueden tener parámetros con valores por defecto.
+## 📌 Resumen de Llamadas y Retornos
+
+- ✅ Las funciones se ejecutan con `nombre_funcion()`.
+- 🔁 `return` permite devolver valores y usarlos más adelante.
+- 👀 `print()` solo muestra en pantalla, no devuelve valor.
+- 🎯 Puedes retornar varios valores a la vez (como tuplas).
+- 🧩 Puedes usar parámetros con valores por defecto.
 """
+
+# ========================================
+# Ejercicios de Práctica
+# ========================================
+
+"""
+## 🧠 Ejercicios de práctica para Llamadas y Retornos
+
+1️⃣ Crea una función `saludo_personalizado(nombre)` que devuelva un string saludando a la persona.
+
+2️⃣ Escribe una función `area_rectangulo(base, altura)` que retorne el área.
+
+3️⃣ Crea una función `es_mayor_edad(edad)` que devuelva "Mayor de edad" si edad ≥ 18, de lo contrario "Menor de edad".
+
+4️⃣ Escribe una función `calculos_basicos(x, y)` que retorne la suma, resta y multiplicación como tupla.
+
+5️⃣ Crea una función `precio_total(precio, impuestos=0.15)` que devuelva el precio total incluyendo impuestos.
+"""
+
+# --------------------------------------------------
+# 1️⃣ saludo_personalizado
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 2️⃣ area_rectangulo
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 3️⃣ es_mayor_edad
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 4️⃣ calculos_basicos
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 5️⃣ precio_total
+# --------------------------------------------------
 
 # ========================================
 # Fin del Documento
