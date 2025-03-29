@@ -175,5 +175,82 @@ print(suma_total)  # 15
 """
 
 # ========================================
+# Ejercicios de Práctica
+# ========================================
+ 
+"""
+## 🧠 Ejercicios de práctica para Funciones Avanzadas
+ 
+1️⃣ Crea una función `saludo_personalizado` que reciba `nombre` y `mensaje` como argumentos por palabra clave e imprima un saludo.
+ 
+2️⃣ Define una función `crear_usuario` con argumentos predeterminados `nombre='Invitado'` y `activo=True`. Imprímelos.
+ 
+3️⃣ Escribe una función `registrar_datos` que use `*args` para imprimir cualquier cantidad de datos personales.
+ 
+4️⃣ Escribe una función `crear_config` que reciba `**kwargs` con claves como 'theme', 'language', 'timezone' y las imprima.
+ 
+5️⃣ Crea una función `multiplicador_por(factor)` que retorne una función closure que multiplique por ese factor.
+ 
+6️⃣ Usa un decorador para cronometrar cuánto tarda en ejecutarse una función que imprima los primeros 1000 números.
+ 
+7️⃣ Aplica `map()` para elevar al cuadrado una lista de números.
+ 
+8️⃣ Usa `filter()` para extraer solo las palabras de más de 5 letras en una lista de strings.
+ 
+9️⃣ Usa `zip()` para emparejar una lista de nombres con edades y mostrarlo como un diccionario.
+ 
+🔟 Usa `reduce()` para multiplicar todos los elementos de una lista de enteros.
+"""
+ 
+# --------------------------------------------------
+# 1️⃣ Argumentos por palabra clave
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 2️⃣ Argumentos con valores predeterminados
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 3️⃣ Uso de *args
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 4️⃣ Uso de **kwargs
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 5️⃣ Funciones anidadas (closure)
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 6️⃣ Decorador personalizado (cronómetro)
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 7️⃣ Uso de map()
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 8️⃣ Uso de filter()
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 9️⃣ Uso de zip()
+# --------------------------------------------------
+ 
+ 
+# --------------------------------------------------
+# 🔟 Uso de reduce()
+# --------------------------------------------------
+ 
+# ========================================
 # Fin del Documento
 # ========================================
