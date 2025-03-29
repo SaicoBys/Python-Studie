@@ -119,5 +119,42 @@ funcion_externa()
 """
 
 # ========================================
+# Ejercicios de Práctica
+# ========================================
+
+"""
+## 🧠 Ejercicios de práctica sobre Ámbito de Variables
+
+1️⃣ Crea una función que defina una variable local y muestre su valor dentro de la función. Intenta imprimirla fuera de la función (debería dar error si lo descomentas).
+
+2️⃣ Declara una variable global y luego crea una función que acceda a ella sin modificarla. Imprime su valor dentro y fuera de la función.
+
+3️⃣ Crea una función que utilice la palabra clave `global` para modificar una variable global y muestra su valor antes y después del llamado.
+
+4️⃣ Crea una función anidada donde la interna modifique una variable de la externa usando `nonlocal` y muestra los cambios.
+
+✅ Prueba cada ejercicio para entender el comportamiento de las variables según su ámbito.
+"""
+
+# --------------------------------------------------
+# 1️⃣ Variable local
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 2️⃣ Variable global (lectura)
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 3️⃣ Uso de global
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 4️⃣ Uso de nonlocal
+# --------------------------------------------------
+
+# ========================================
 # Fin del Documento
 # ========================================
