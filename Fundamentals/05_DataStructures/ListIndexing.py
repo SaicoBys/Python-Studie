@@ -1,46 +1,103 @@
 # ========================================
-# Indexación y Manipulación de Listas en Python
+"""
+📌 TEMA: Indexación y Manipulación de Listas
+
+La indexación te permite acceder, insertar y eliminar elementos en listas.
+
+✅ Características:
+- Python usa indexación basada en cero.
+- Puedes usar índices negativos para acceder desde el final.
+- `.insert()` permite agregar elementos en posiciones específicas.
+- `.pop()` elimina y devuelve un elemento de la lista (último por defecto).
+"""
 # ========================================
 
-# Descripción de la Indexación:
-"""
-La indexación en las listas te permite acceder a elementos individuales.
-Python utiliza indexación basada en cero, lo que significa que el primer elemento de la lista tiene índice 0.
-"""
 
-# Lista de ejemplo con nombres de jugadores
-names = ['Roger', 'Rafael', 'Andy', 'Novak']
-print("El tercer jugador es:", names[2])  # Accede al tercer elemento, que es 'Andy'
-
-# Indexación negativa para acceder al último elemento
-print("El último jugador es:", names[-1])  # Accede al último elemento, que es 'Novak'
-
-# Descripción del Método .insert():
+# --------------------------------------------------
+# 🎯 Ejemplo 1: Acceso con índice positivo y negativo
+# --------------------------------------------------
 """
-El método .insert() se utiliza para agregar un elemento a una lista en un índice especificado.
+Accedemos al tercer y último jugador en una lista de nombres.
 """
 
-# Lista de nombres en una fila
-store_line = ["Karla", "Maxium", "Martim", "Isabella"]
+names = ['Roger', 'Rafael', 'Andy', 'Novak']       # Lista de jugadores
+print("El tercer jugador es:", names[2])           # Accede al índice 2 → 'Andy'
+print("El último jugador es:", names[-1])          # Accede al índice -1 → 'Novak'
 
-# Insertar a 'Vikor' en la segunda posición
-store_line.insert(2, "Vikor")
-print("Lista después de insertar:", store_line)
 
-# Descripción del Método .pop():
+# --------------------------------------------------
+# 🎯 Ejemplo 2: Uso del método .insert()
+# --------------------------------------------------
 """
-El método .pop() elimina el elemento en el índice dado de la lista y lo devuelve.
-Si no se especifica un índice, .pop() elimina y devuelve el último elemento de la lista.
+Insertamos un nuevo elemento en una posición específica dentro de la lista.
 """
 
-# Lista de temas de ciencia de la computación
-cs_topics = ["Python", "Data Structures", "Balloon Making", "Algorithms", "Clowns 101"]
+store_line = ["Karla", "Maxium", "Martim", "Isabella"]  # Lista inicial
+store_line.insert(2, "Vikor")                            # Inserta "Vikor" en el índice 2
+print("Lista después de insertar:", store_line)         # Muestra la lista actualizada
 
-# Eliminar el último elemento
-removed_element = cs_topics.pop()
-print("Lista después de pop:", cs_topics)
-print("Elemento eliminado:", removed_element)
+
+# --------------------------------------------------
+# 🎯 Ejemplo 3: Uso del método .pop()
+# --------------------------------------------------
+"""
+Eliminamos el último elemento de la lista usando .pop() y lo mostramos.
+"""
+
+cs_topics = ["Python", "Data Structures", "Balloon Making", "Algorithms", "Clowns 101"]  # Lista de temas
+removed_element = cs_topics.pop()                        # Elimina el último elemento
+print("Lista después de pop:", cs_topics)               # Muestra la lista actualizada
+print("Elemento eliminado:", removed_element)           # Muestra el elemento eliminado
+
 
 # ========================================
-# Fin del Documento
+"""
+📌 RESUMEN
+
+- Se accede a elementos con `lista[indice]`.
+- Se puede usar índice negativo para acceder desde el final.
+- `.insert(indice, elemento)` agrega un valor en una posición específica.
+- `.pop()` elimina y devuelve un elemento (último por defecto).
+"""
+# ========================================
+
+
+# ========================================
+"""
+## 🧠 Ejercicios de Práctica
+Practica lo aprendido sobre indexación y métodos de listas.
+"""
+# ========================================
+
+# --------------------------------------------------
+# 1️⃣ Acceder a Elementos por Índice
+# --------------------------------------------------
+"""
+Crea una lista de 5 países y muestra el segundo y el último país usando índices.
+"""
+
+# Tu código aquí...
+
+
+# --------------------------------------------------
+# 2️⃣ Insertar un Elemento
+# --------------------------------------------------
+"""
+Crea una lista de animales. Inserta 'Lobo' en la posición 2.
+Imprime la lista resultante.
+"""
+
+# Tu código aquí...
+
+
+# --------------------------------------------------
+# 3️⃣ Eliminar con .pop()
+# --------------------------------------------------
+"""
+Crea una lista de comidas y elimina la tercera usando `.pop()`.
+Muestra la comida eliminada y la lista final.
+"""
+
+# Tu código aquí...
+
 # ========================================

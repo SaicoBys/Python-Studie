@@ -158,5 +158,4 @@ Imprime la lista final.
 # Tu código aquí...
 
 
-# ✅ ¡Sigue practicando para dominar las listas!
 # ========================================
