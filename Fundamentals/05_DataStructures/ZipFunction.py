@@ -12,10 +12,15 @@ Si los iterables tienen diferente longitud, `zip()` detiene el emparejamiento cu
 el final del iterable más corto.
 """
 
-# Ejemplo básico de zip()
-lista1 = [1, 2, 3]
-lista2 = ['a', 'b', 'c']
-resultado = zip(lista1, lista2)
+# --------------------------------------------------
+# 🎯 Ejemplo: zip() con dos listas de igual longitud
+# --------------------------------------------------
+"""
+Usamos zip() para combinar dos listas del mismo tamaño en pares ordenados.
+"""
+lista1 = [1, 2, 3]  # Primera lista
+lista2 = ['a', 'b', 'c']  # Segunda lista
+resultado = zip(lista1, lista2)  # Combinamos las dos listas
 print(list(resultado))  # [(1, 'a'), (2, 'b'), (3, 'c')]
 
 """
@@ -25,10 +30,15 @@ print(list(resultado))  # [(1, 'a'), (2, 'b'), (3, 'c')]
 - Si los iterables tienen diferente longitud, `zip()` tomará hasta la longitud del más corto.
 """
 
-# Ejemplo con diferentes longitudes
-lista1 = [1, 2, 3]
-lista2 = ['a', 'b']
-resultado = zip(lista1, lista2)
+# --------------------------------------------------
+# 🎯 Ejemplo: zip() con listas de diferente longitud
+# --------------------------------------------------
+"""
+zip() detiene la combinación en la longitud del iterable más corto.
+"""
+lista1 = [1, 2, 3]  # Primera lista
+lista2 = ['a', 'b']  # Segunda lista con menor longitud
+resultado = zip(lista1, lista2)  # Combinamos las dos listas
 print(list(resultado))  # [(1, 'a'), (2, 'b')]
 
 """
@@ -36,11 +46,16 @@ print(list(resultado))  # [(1, 'a'), (2, 'b')]
 Se pueden combinar más de dos iterables al mismo tiempo.
 """
 
-# Ejemplo con tres listas
-numeros = [1, 2, 3]
-letras = ['a', 'b', 'c']
-simbolos = ['!', '@', '#']
-resultado = zip(numeros, letras, simbolos)
+# --------------------------------------------------
+# 🎯 Ejemplo: zip() con tres listas
+# --------------------------------------------------
+"""
+Podemos usar zip() con más de dos listas para agrupar múltiples elementos por índice.
+"""
+numeros = [1, 2, 3]  # Primera lista
+letras = ['a', 'b', 'c']  # Segunda lista
+simbolos = ['!', '@', '#']  # Tercera lista
+resultado = zip(numeros, letras, simbolos)  # Combinamos las tres listas
 print(list(resultado))  # [(1, 'a', '!'), (2, 'b', '@'), (3, 'c', '#')]
 
 """
@@ -48,9 +63,14 @@ print(list(resultado))  # [(1, 'a', '!'), (2, 'b', '@'), (3, 'c', '#')]
 La función `zip()` se puede usar junto con el operador `*` para desempaquetar iterables.
 """
 
-# Ejemplo de desempaquetado
-pares = [(1, 'a'), (2, 'b'), (3, 'c')]
-numeros, letras = zip(*pares)
+# --------------------------------------------------
+# 🎯 Ejemplo: Desempaquetado con zip() y *
+# --------------------------------------------------
+"""
+zip() puede desempaquetarse usando el operador * para obtener listas separadas desde una lista de tuplas.
+"""
+pares = [(1, 'a'), (2, 'b'), (3, 'c')]  # Lista de tuplas
+numeros, letras = zip(*pares)  # Desempaquetamos las tuplas en dos listas
 print(numeros)  # (1, 2, 3)
 print(letras)   # ('a', 'b', 'c')
 
@@ -59,12 +79,17 @@ print(letras)   # ('a', 'b', 'c')
 `zip()` es útil en loops cuando se necesita recorrer dos o más listas simultáneamente.
 """
 
-# Iteración usando zip()
-nombres = ['Ana', 'Luis', 'Carlos']
-edades = [25, 30, 22]
+# --------------------------------------------------
+# 🎯 Ejemplo: Iteración con zip()
+# --------------------------------------------------
+"""
+Podemos recorrer varias listas a la vez con zip() dentro de un bucle for.
+"""
+nombres = ['Ana', 'Luis', 'Carlos']  # Lista de nombres
+edades = [25, 30, 22]  # Lista de edades
 
-for nombre, edad in zip(nombres, edades):
-    print(f"{nombre} tiene {edad} años")
+for nombre, edad in zip(nombres, edades):  # Iteramos sobre ambas listas
+    print(f"{nombre} tiene {edad} años")  # Imprimimos el mensaje
 
 """
 ## Resumen
@@ -74,5 +99,45 @@ for nombre, edad in zip(nombres, edades):
 - Es útil para iteraciones múltiples.
 - Devuelve un iterador, por lo que a veces es necesario convertirlo en lista o tupla.
 """
+
+# ========================================
+"""
+## 🧠 Ejercicios de Práctica
+Pon en práctica lo aprendido sobre la función zip().
+"""
+# ========================================
+
+# --------------------------------------------------
+# 1️⃣ Combinar dos listas de colores y códigos hex
+# --------------------------------------------------
+"""
+Crea dos listas: una de colores y otra de códigos hexadecimales.
+Combínalas usando zip() y muestra los pares.
+"""
+
+# Tu código aquí...
+
+
+# --------------------------------------------------
+# 2️⃣ Iterar sobre tres listas con zip()
+# --------------------------------------------------
+"""
+Crea tres listas: nombres, edades y países.
+Recorre las tres listas al mismo tiempo y muestra un mensaje personalizado por cada grupo.
+"""
+
+# Tu código aquí...
+
+
+# --------------------------------------------------
+# 3️⃣ Desempaquetar una lista de tuplas con zip()
+# --------------------------------------------------
+"""
+Dada una lista de tuplas de coordenadas [(1, 2), (3, 4), (5, 6)],
+desempaquétala en dos listas: una de x y otra de y.
+"""
+
+# Tu código aquí...
+
 
 # ========================================
