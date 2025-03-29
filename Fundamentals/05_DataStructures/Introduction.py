@@ -66,5 +66,55 @@ mi_diccionario = {"nombre": "Carlos", "edad": 25}
 print(mi_diccionario["nombre"])  # Salida: Carlos
 
 # ========================================
+# Resumen
+# ========================================
+
+"""
+## 📌 Resumen
+- Las **listas** son estructuras ordenadas y mutables.
+- Las **tuplas** son como listas, pero inmutables.
+- Los **conjuntos** eliminan duplicados y no tienen un orden específico.
+- Los **diccionarios** almacenan pares clave-valor para acceso rápido a datos.
+"""
+
+# ========================================
+# Ejercicios de Práctica
+# ========================================
+
+"""
+## 🧠 Ejercicios de práctica para estructuras de datos
+
+1️⃣ Crea una lista llamada `frutas` que contenga al menos tres frutas diferentes y muéstrala por pantalla.
+
+2️⃣ Declara una tupla con tres ciudades que hayas visitado y luego imprime la segunda ciudad.
+
+3️⃣ Define un conjunto con algunos números repetidos y verifica que no se repitan al imprimirlo.
+
+4️⃣ Crea un diccionario que contenga la información de un estudiante: nombre, edad y curso.
+
+✅ Intenta resolver estos ejercicios sin mirar ejemplos anteriores.
+"""
+
+# --------------------------------------------------
+# 1️⃣ Lista de frutas
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 2️⃣ Tupla de ciudades
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 3️⃣ Conjunto sin duplicados
+# --------------------------------------------------
+
+
+# --------------------------------------------------
+# 4️⃣ Diccionario de estudiante
+# --------------------------------------------------
+
+
+# ========================================
 # Fin del Documento
 # ========================================
