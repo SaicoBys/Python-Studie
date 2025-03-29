@@ -1,5 +1,3 @@
-
-
 #!/usr/bin/env python3
 # ========================================
 # Introducción a Listas en Python
@@ -21,92 +19,88 @@ Permiten almacenar múltiples valores en una sola variable y pueden contener dif
 # ========================================
 
 """
-Las listas se crean usando corchetes `[]` y separando los elementos con comas.
+Creamos varias listas usando corchetes `[]`, incluyendo una lista de números, una de cadenas, una mixta y una vacía.
 """
 
-# Lista de números
-numeros = [1, 2, 3, 4, 5]
-
-# Lista de cadenas
-nombres = ["Ana", "Carlos", "Luis"]
-
-# Lista mixta
-mixta = [1, "Python", 3.14, True]
-
+# Lista de números enteros
+numeros = [1, 2, 3, 4, 5]                  
+# Lista de cadenas de texto
+nombres = ["Ana", "Carlos", "Luis"]       
+# Lista con tipos mixtos
+mixta = [1, "Python", 3.14, True]         
 # Lista vacía
-vacia = []
+vacia = []                                
 
-print(numeros)  # [1, 2, 3, 4, 5]
-print(nombres)  # ['Ana', 'Carlos', 'Luis']
-print(mixta)    # [1, 'Python', 3.14, True]
-print(vacia)    # []
+print(numeros)   # Muestra la lista de números
+print(nombres)   # Muestra la lista de nombres
+print(mixta)     # Muestra la lista mixta
+print(vacia)     # Muestra la lista vacía
 
 # ========================================
 # 2. Acceso a Elementos
 # ========================================
 
 """
-Los elementos de una lista se acceden mediante índices (empezando en 0).
+Accedemos a elementos por su índice (positivo o negativo) y modificamos uno de ellos.
 """
 
-print(nombres[0])  # Ana
-print(nombres[-1])  # Luis (índice negativo)
+print(nombres[0])   # Accede al primer elemento: "Ana"
+print(nombres[-1])  # Accede al último elemento: "Luis"
 
-# Modificación de elementos
-nombres[1] = "Pedro"
-print(nombres)  # ['Ana', 'Pedro', 'Luis']
+nombres[1] = "Pedro"  # Cambia "Carlos" por "Pedro"
+print(nombres)        # Muestra la lista modificada
 
 # ========================================
 # 3. Métodos Comunes de Listas
 # ========================================
 
 """
-Las listas tienen varios métodos para modificar su contenido.
+Usamos varios métodos comunes de listas para modificar su contenido.
 """
 
 # `.append()` → Agrega un elemento al final
-nombres.append("Marta")
-print(nombres)  # ['Ana', 'Pedro', 'Luis', 'Marta']
+nombres.append("Marta")  
+print(nombres)  # Muestra la lista después de agregar "Marta"
 
 # `.remove()` → Elimina la primera ocurrencia de un valor
-nombres.remove("Pedro")
-print(nombres)  # ['Ana', 'Luis', 'Marta']
+nombres.remove("Pedro")  
+print(nombres)  # Muestra la lista después de eliminar "Pedro"
 
 # `.pop()` → Elimina y devuelve el último elemento (o uno específico)
-ultimo = nombres.pop()
-print(ultimo)  # 'Marta'
-print(nombres)  # ['Ana', 'Luis']
+ultimo = nombres.pop()  
+print(ultimo)  # Muestra el último elemento eliminado: 'Marta'
+print(nombres)  # Muestra la lista después de eliminar el último elemento
 
 # `.sort()` → Ordena la lista (solo funciona con datos del mismo tipo)
-numeros.sort()
-print(numeros)  # [1, 2, 3, 4, 5]
+numeros.sort()  
+print(numeros)  # Muestra la lista de números ordenada
 
 # `.reverse()` → Invierte el orden de la lista
-numeros.reverse()
-print(numeros)  # [5, 4, 3, 2, 1]
+numeros.reverse()  
+print(numeros)  # Muestra la lista de números invertida
 
 # `.index()` → Devuelve la posición de un elemento
-print(nombres.index("Ana"))  # 0
+print(nombres.index("Ana"))  # Muestra la posición de "Ana" en la lista
 
 # ========================================
 # 4. Operaciones con Listas
 # ========================================
 
 """
-Las listas permiten operaciones como concatenación, repetición y verificación de pertenencia.
+Realizamos operaciones con listas: concatenación, repetición y verificación de existencia.
 """
 
 # Concatenación de listas
-nueva_lista = nombres + ["Sofía", "David"]
-print(nueva_lista)  # ['Ana', 'Luis', 'Sofía', 'David']
+nueva_lista = nombres + ["Sofía", "David"]  
+print(nueva_lista)  # Muestra la lista nueva después de la concatenación
 
 # Repetición de listas
-repetida = numeros * 2
-print(repetida)  # [5, 4, 3, 2, 1, 5, 4, 3, 2, 1]
+repetida = numeros * 2  
+print(repetida)  # Muestra la lista de números repetida
 
 # Comprobación de existencia de un elemento
-print("Ana" in nombres)  # True
-print("Carlos" in nombres)  # False
+print("Ana" in nombres)  # Verifica si "Ana" está en la lista: True
+print("Carlos" in nombres)  # Verifica si "Carlos" está en la lista: False
 
 # ========================================
 # Resumen
@@ -124,5 +118,45 @@ print("Carlos" in nombres)  # False
 """
 
 # ========================================
-# Fin del Documento
+"""
+## 🧠 Ejercicios de Práctica
+Pon en práctica lo aprendido sobre listas en Python.
+"""
+# ========================================
+
+# --------------------------------------------------
+# 1️⃣ Crear una lista de frutas
+# --------------------------------------------------
+"""
+Crea una lista llamada `frutas` que contenga al menos 4 frutas.
+Imprime la lista completa.
+"""
+
+# Tu código aquí...
+
+
+# --------------------------------------------------
+# 2️⃣ Acceder y modificar un elemento
+# --------------------------------------------------
+"""
+Accede al segundo elemento de la lista `frutas` y cámbialo por otra fruta.
+Imprime la lista resultante.
+"""
+
+# Tu código aquí...
+
+
+# --------------------------------------------------
+# 3️⃣ Agregar y eliminar elementos
+# --------------------------------------------------
+"""
+Agrega una nueva fruta a la lista con `.append()`.
+Luego elimina una fruta existente usando `.remove()`.
+Imprime la lista final.
+"""
+
+# Tu código aquí...
+
+
+# ✅ ¡Sigue practicando para dominar las listas!
 # ========================================
