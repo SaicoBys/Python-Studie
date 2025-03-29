@@ -18,15 +18,19 @@ print(greeting)
 # ========================================
 # Métodos comunes de strings
 # ========================================
+"""
+Usamos métodos comunes de strings para transformar o analizar su contenido.
+Estos métodos NO modifican el string original, sino que devuelven uno nuevo.
+"""
 
-text = "  Python is AWESOME!  "
+text = "  Python is AWESOME!  "  # String original con espacios
 
-print(text.lower())       # '  python is awesome!  '
-print(text.upper())       # '  PYTHON IS AWESOME!  '
-print(text.strip())       # 'Python is AWESOME!'
-print(text.title())       # '  Python Is Awesome!  '
-print(text.replace("AWESOME", "great"))  # '  Python is great!  '
-print(text.split())       # ['Python', 'is', 'AWESOME!']
+print(text.lower())       # Convierte todo el texto a minúsculas
+print(text.upper())       # Convierte todo el texto a mayúsculas
+print(text.strip())       # Elimina espacios al inicio y final
+print(text.title())       # Convierte la primera letra de cada palabra en mayúscula
+print(text.replace("AWESOME", "great"))  # Reemplaza la palabra "AWESOME" por "great"
+print(text.split())       # Divide el texto en una lista de palabras separadas por espacio
 
 # ========================================
 # Indexación y slicing
