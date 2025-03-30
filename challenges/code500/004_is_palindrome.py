@@ -10,4 +10,13 @@ Salida esperada: True
 """
 # ========================================
 
-# ✅ Tu solución aquí...
+def is_palindrome(input_word):
+    reversed_word = ""
+    for index in range(len(input_word) - 1, -1, -1):
+        reversed_word += input_word[index]
+
+    if reversed_word.lower() == input_word.lower():
+        return True
+    return False
+
+print(is_palindrome("Radar"))
