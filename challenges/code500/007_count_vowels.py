@@ -8,3 +8,14 @@ Entrada: "hello"
 Salida esperada: 2
 """
 # ========================================
+
+def counting_vowels(word):
+    vowels = "aeiou"
+    counter = 0
+    for index in word:
+        if index in vowels:
+            counter += 1
+    return counter
+        
+
+print(counting_vowels("Nicole"))
