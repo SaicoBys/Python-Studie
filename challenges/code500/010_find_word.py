@@ -8,3 +8,10 @@ Entrada: "Hello, how are you?", "how"
 Salida esperada: True
 """
 # ========================================
+
+def find_word(word, txt):
+    if word in txt:
+        return True
+    return False
+
+print(find_word("Jacob", "Hola, Jacob"))
