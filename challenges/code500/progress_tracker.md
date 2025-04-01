@@ -7,8 +7,8 @@
 | 003  | Sumar los positivos       | ✅ Completado |
 | 004  | Verificar palíndromo      | ✅ Completado |
 | 005  | Máximo de tres números    | ✅ Completado |
-| 006  | Ordenar una lista         | ⬜ Pendiente |
-| 007  | Contar vocales en un string| ⬜ Pendiente |
-| 008  | Encontrar el menor número | ⬜ Pendiente |
-| 009  | Invertir lista            | ⬜ Pendiente |
-| 010  | Buscar palabra en texto   | ⬜ Pendiente |
+| 006  | Ordenar una lista         | ✅ Completado |
+| 007  | Contar vocales en un string| ✅ Completado |
+| 008  | Encontrar el menor número | ✅ Completado |
+| 009  | Invertir lista            | ✅ Completado |
+| 010  | Buscar palabra en texto   | ✅ Completado |
