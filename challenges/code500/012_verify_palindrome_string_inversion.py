@@ -8,5 +8,19 @@ Entrada: "radar"
 Salida esperada: True
 """
 # ========================================
+palabra = "radar"
+def palidrome_inversion(word):
+    reversed_word = ""
 
-# Tu código aquí...
+    for char in range(len(word) - 1, -1, -1):
+        reversed_word += word[char]
+    
+    if word == reversed_word:
+        return True , reversed_word
+    
+
+
+print(palidrome_inversion(palabra))
+
+
+
