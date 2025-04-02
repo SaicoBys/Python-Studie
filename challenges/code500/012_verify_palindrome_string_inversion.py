@@ -10,13 +10,16 @@ Salida esperada: True
 # ========================================
 palabra = "radar"
 def palidrome_inversion(word):
+    word_lower = word.lower()
     reversed_word = ""
 
-    for char in range(len(word) - 1, -1, -1):
-        reversed_word += word[char]
+    for index in range(len(word_lower) - 1, -1, -1):
+        reversed_word += word_lower[index]
     
-    if word == reversed_word:
-        return True , reversed_word
+    if word_lower == reversed_word:
+        return True
+    else:
+        return False
     
 
 
