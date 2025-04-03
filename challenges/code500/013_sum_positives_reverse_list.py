@@ -11,4 +11,19 @@ Salida esperada:
 """
 # ========================================
 
-# Tu código aquí...
+enter = [1, -2, 3, 4, -5]
+
+def sum_positives_reverse_list(lst):
+    reversed_list = []
+    nums = 0
+    for index in range(len(lst) -1, -1, -1):
+        reversed_list.append(lst[index])
+        if lst[index] > 0:
+            nums += lst[index]
+    
+    message = "The total is: {nums} and the order is: {reversed_list}".format(reversed_list=reversed_list, nums=nums)
+    return message
+
+
+print(sum_positives_reverse_list(enter))
+
