@@ -10,4 +10,8 @@ Salida esperada: "The Quick Brown Fox"
 """
 # ========================================
 
-# Your code here...
+entrada = "the quick brown fox"
+def convert_string_to_title_case(word):
+    return word.title()
+
+print(convert_string_to_title_case(entrada))
