@@ -9,5 +9,8 @@ Entrada: ("Hello", 1)
 Salida esperada: "e"
 """
 # ========================================
+entrada = ("Hello", 1)
+def access_character_by_index(char, index):
+    return char[index]
 
-# Your code here...
+print(access_character_by_index("Hello", 3))
