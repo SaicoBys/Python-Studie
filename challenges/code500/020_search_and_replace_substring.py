@@ -10,4 +10,7 @@ Salida esperada: "The cat is friendly"
 """
 # ========================================
 
-# Your code here...
+def search_and_replace_substring(txt, word1, word2):
+    return txt.replace(word1, word2)
+entrada = "The dog is friendly"
+print(search_and_replace_substring(entrada, "dog", "cat"))
