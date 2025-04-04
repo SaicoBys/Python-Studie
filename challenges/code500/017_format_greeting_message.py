@@ -10,4 +10,7 @@ Salida esperada: "Hello, Ana! Welcome to Madrid."
 """
 # ========================================
 
-# Your code here...
+def format_greeting_message(name, city):
+    return f"Hello, {name}! Welcome to {city}"
+
+print(format_greeting_message("Jacob", "Santiago."))
