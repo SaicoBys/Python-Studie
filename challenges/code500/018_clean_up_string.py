@@ -9,5 +9,9 @@ Entrada: "   Hello, wrld!   "
 Salida esperada: "Hello, wrld!"  (o "Hello, world!" si se reemplaza "wrld" por "world")
 """
 # ========================================
+entrada =  "   Hello, wrld!   "
+def clean_up_string(word):
+    return word.strip()
 
-# Your code here...
+print(clean_up_string(entrada))
+
