@@ -9,5 +9,9 @@ Entrada: "user@example.com"
 Salida esperada: "example.com"
 """
 # ========================================
+entrada = "user@example.com"
 
-# Your code here...
+def extract_domain_from_email(mail):
+    return mail.split("@")[-1]
+
+print(extract_domain_from_email(entrada))

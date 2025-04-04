@@ -4,7 +4,7 @@
 COMMIT_MSG=${1:-"Auto commit - $(date +'%Y-%m-%d %H:%M')"}
 
 # ✅ Navegar al directorio del repo (ajusta si es necesario)
-cd /Users/saicobys/Developer/Python || exit
+# cd /Users/saicobys/Developer/Python || exit
 
 # ✅ Mostrar rama actual
 branch=$(git rev-parse --abbrev-ref HEAD)
