@@ -1,6 +1,6 @@
 # 📝 Commit Message Template Guide
 
-I use this template to write clear, meaningful Git commit messages for your projects.
+I use this template to write clear, meaningful Git commit messages for my projects.
 
 ---
 
