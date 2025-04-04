@@ -12,4 +12,11 @@ Salida esperada:
 """
 # ========================================
 
-# Tu código aquí...
+def reverse_string_sum_ascii(letter):
+    reversed_letter = letter[::-1]
+    ascii_sum = 0
+    for char in reversed_letter:
+        ascii_sum += ord(char)
+    return reversed_letter, ascii_sum
+
+print(reverse_string_sum_ascii("abc"))
