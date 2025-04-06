@@ -1,4 +1,9 @@
-#!/usr/bin/env python3
+# Proyecto: Thread Shed
+# Descripción: Este proyecto procesa un string que contiene todas las transacciones diarias de la tienda Thread Shed.
+# Se separan y limpian los datos para extraer la lista de clientes, ventas y tipos de hilo vendidos.
+# Además, se calcula el total de ventas y se cuenta cuántos hilos de cada color se vendieron.
+
+# Se define el string con todas las transacciones diarias.
 daily_sales = \
 """Edith Mcbride   ;,;$1.21   ;,;   white ;,; 
 09/15/17   ,Herbert Tran   ;,;   $7.29;,; 
@@ -106,25 +111,70 @@ green&white;,;09/15/17,   Gail Phelps   ;,;$30.52
 ;,; green&white&blue   ;,; 09/15/17 , Myrtle Morris 
 ;,;   $22.66   ;,; green&white&blue;,;09/15/17"""
 
-#------------------------------------------------
-#Start coding below!
-daily_sales_replaced = daily_sales.replace(";,;", "|")
-print(daily_sales_replaced)
+# -------------------------------------------------------------------------------------
+# Paso 1: Reemplazar el separador ;,; por una coma para facilitar la división de datos.
+daily_sales_replaced = daily_sales.replace(";,;", ",")
 
-daily_transactions = daily_sales_replaced.split(",,")
-#print(daily_transactions)
+# -------------------------------------------------------------------------------------
+# Paso 2: Dividir el string en una lista de transacciones usando la coma como separador.
+daily_transactions = daily_sales_replaced.split(",")
 
-daily_transactions_split = []
- 
-for transactions in daily_transactions:
-  parts = transactions.split("|")
-  daily_transactions_split.append(parts)
-#print(daily_transactions_split)
+# -------------------------------------------------------------------------------------
+# Paso 3: Eliminar los espacios en blanco extra de cada elemento de la lista.
+# Se usa una list comprehension para aplicar strip() a cada transacción.
+transactions_clean = [transaction.strip() for transaction in daily_transactions]
 
-transactions_clean = []
+# -------------------------------------------------------------------------------------
+# Paso 4: Separar los datos en listas individuales utilizando slicing.
+# Cada transacción consta de 4 datos: cliente, venta, hilo vendido y fecha.
+# Con slicing se extraen los datos correspondientes a cada uno.
+customers = transactions_clean[0::4]  # Toma cada 4º elemento empezando en 0 (nombres de clientes)
+sales = transactions_clean[1::4]      # Toma cada 4º elemento empezando en 1 (monto de ventas)
+thread_sold = transactions_clean[2::4]  # Toma cada 4º elemento empezando en 2 (tipo de hilo vendido)
 
-for daily in daily_transactions_split:
-  clean_up = [item.strip() for item in daily]
-  transactions_clean.append(clean_up)
-print(transactions_clean)
+# -------------------------------------------------------------------------------------
+# Paso 5: Calcular el total de ventas del día.
+total_sales = 0  # Inicializamos el acumulador de ventas en 0
+for sale in sales:
+    # Eliminar el símbolo "$" del string y convertir el valor a float
+    amount = sale.replace("$", "")
+    total_sales += float(amount)  # Sumar el valor convertido al total
+print("Total Sales:", total_sales)  # Imprimir el total de ventas
 
+# -------------------------------------------------------------------------------------
+# Paso 6: Separar los colores en una lista individual.
+# Algunos elementos en thread_sold contienen más de un color separados por "&".
+thread_sold_split = []  # Lista para almacenar cada color individualmente
+for colors in thread_sold:
+    if "&" in colors:  # Si el string contiene "&", significa que hay múltiples colores
+        # Se divide el string en cada color usando split("&")
+        for color in colors.split("&"):
+            # Se agrega cada color a la lista, eliminando espacios adicionales
+            thread_sold_split.append(color.strip())
+    else:
+        # Si solo hay un color, se añade directamente a la lista
+        thread_sold_split.append(colors)
+
+# -------------------------------------------------------------------------------------
+# Función para contar cuántas veces se vende un color específico
+def color_count(color):
+    counter = 0  # Inicializamos el contador en 0
+    # Iterar sobre la lista de hilos vendidos individualmente
+    for thread in thread_sold_split:
+        if thread == color:  # Si el color coincide, se incrementa el contador
+            counter += 1
+    return counter  # Devolver el número total de ocurrencias del color
+
+# Imprimir cuántos hilos blancos se vendieron
+print("White threads sold:", color_count('white'))
+
+# -------------------------------------------------------------------------------------
+# Paso 7: Mostrar un resumen de la cantidad de hilos vendidos por cada color.
+# Se define la lista de colores disponibles en la tienda.
+colors_list = ['red', 'yellow', 'green', 'white', 'black', 'blue', 'purple']
+# Iterar por cada color en la lista y usar la función color_count para obtener el total
+for today_sold in colors_list:
+    count = color_count(today_sold)  # Obtener el número de hilos vendidos para el color actual
+    # Formatear e imprimir la oración con el resumen de ventas para ese color
+    sentence = "Thread Shed sold {} threads of {} thread today.".format(count, today_sold)
+    print(sentence)
