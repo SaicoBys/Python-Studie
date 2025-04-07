@@ -1,3 +1,16 @@
+# 📈 Python Practice Tracker (Bloques de 10 ejercicios)
+
+| Bloque       | Rango      | Tema Principal                        | Estado       | Dominio         |
+|--------------|------------|----------------------------------------|--------------|-----------------|
+| Bloque 01    | 001–010    | Fundamentos, bucles, lógica básica     | ✅ Completado | 🟢 Fuerte        |
+| Bloque 02    | 011–020    | Strings y métodos                      | ✅ Completado | 🟡 En progreso   |
+| Bloque 03    | 021–028    | Strings + flujo de control             | ✅ Completado | 🟢 Fuerte        |
+| Bloque 04    | 029–038    | Diccionarios y lógica aplicada         | 🔄 En progreso| 🔴 Débil         |
+| Bloque 05    | 039–048    | Estructuras anidadas y comprehensions  | 🔄 En progreso| 🔴 Débil         |
+| Bloque 06    | 049–058    | Próximos ejercicios                    | ⏳ Pendiente  | 🔘 Por evaluar   |
+
+---
+
 # 🚀 Progreso de los 500 desafíos de Python
 
 | Nº   | Título                    | Estado      |
