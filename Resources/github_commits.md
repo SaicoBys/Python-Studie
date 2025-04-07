@@ -2,15 +2,13 @@
 
 I use this template to write clear, meaningful Git commit messages for my projects.
 
----
-
-## ✍️ Estructura recomendada
+## ✍️ Estructura básica del mensaje de commit
 
 ```
 <tipo>: <descripción breve y significativa>
 ```
 
-### Tipos comunes
+## 🗂️ Tipos de commits comunes y útiles
 
 - `feat:` Una nueva funcionalidad.
 - `fix:` Corrección de un bug.
@@ -19,34 +17,14 @@ I use this template to write clear, meaningful Git commit messages for my projec
 - `refactor:` Refactorización de código sin cambiar su comportamiento.
 - `test:` Añadir o corregir pruebas.
 - `chore:` Tareas que no modifican el código de producción (actualizar dependencias, etc.)
-
----
-
-## 🧾 Ejemplos
-
-```bash
-feat: add input validation to registration form
-fix: correct typo in email validation regex
-docs: add explanation for sorting algorithm in README
-style: format code according to PEP8
-refactor: simplify loop logic in shipping calculation
-test: add unit tests for new thread color counter
-chore: update pip dependencies
-```
-
----
-
-## ✅ Recomendaciones
-
-- Usa verbos en infinitivo (“add”, “fix”, “update”).
-- Que el mensaje no supere los 72 caracteres en su línea principal.
-- Si necesitas detalles adicionales, usa una segunda línea en blanco y escribe un párrafo más extenso.
-
----
-
-> 🧠 Consejo: Mantener una convención clara para los commits ayuda a colaborar mejor y entender la evolución del proyecto.
-
----
+- `ci:` Cambios relacionados con integración continua (GitHub Actions, workflows).
+- `build:` Cambios en dependencias, compilación o configuración de entorno.
+- `perf:` Mejoras de rendimiento sin alterar el comportamiento.
+- `revert:` Reversión de un commit anterior.
+- `content:` Añadir contenido nuevo como soluciones de ejercicios o texto.
+- `log:` Cambios en mensajes de consola o depuración (prints, logging).
+- `temp:` Cambios temporales con intención de eliminar más adelante.
+- `structure:` Reorganización de archivos, carpetas o convenciones.
 
 ## 🧩 Plantillas específicas para cada tipo de commit
 
@@ -97,4 +75,42 @@ test: add tests for is_even() in Operators.py
 chore: rename [folder or file] to match new structure
 # Ejemplo:
 chore: rename VariablesAndDataTypes to 01_Variables_And_DataTypes
+```
+
+## ✅ Ejemplos reales de mensajes
+
+```bash
+feat: add input validation to registration form
+fix: correct typo in email validation regex
+docs: add explanation for sorting algorithm in README
+style: format code according to PEP8
+refactor: simplify loop logic in shipping calculation
+test: add unit tests for new thread color counter
+chore: update pip dependencies
+```
+
+## 🧪 Flujo de trabajo personal con Git
+
+1. Escribo soluciones o actualizo los archivos.
+2. Guardo cambios en VS Code.
+3. Luego corro este comando desde cualquier parte del proyecto:
+
+```bash
+gitup "Added solution for challenge 024: string_length"
+```
+
+4. Esto ejecuta el script `scripts/upload_to_github.sh` con el mensaje de commit proporcionado.
+
+## ✅ Comandos útiles de Git
+
+```bash
+git add nombre_del_archivo.py
+git commit -m "feat: add solución para challenge 025"
+git push
+```
+
+O usando mi alias personalizado:
+
+```bash
+gitup "Added solution for challenge 025: iterate_string"
 ```
