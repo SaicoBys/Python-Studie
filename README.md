@@ -74,6 +74,7 @@ Completar 500 desafíos de programación en Python, mejorando habilidades reales
 - Crear mini-proyectos temáticos (luego del ejercicio 100)
 - Exportar mejores soluciones a un repositorio pro
 - Hacer videos explicando mis soluciones (futuro)
+- Crear script automático para generar mensajes de commit por bloque (smart_commit.sh)
 
 ---
 

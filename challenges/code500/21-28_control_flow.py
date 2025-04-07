@@ -11,14 +11,14 @@ print("Desafío 021")
 Entrada: ("Hello", 1)
 Salida esperada: "e"
 """
+
 entrada = ("Hello", 1)
 def access_character_by_index(char, index):
     return char[index]
 
-print(access_character_by_index("Hello", 3))
-# Tu código aquí
+print(access_character_by_index(*entrada))
 
-# ========================================
+# ======================================== 
 # === 022: slice_substring ===
 # ========================================
 print("Desafío 022")
@@ -31,7 +31,12 @@ print("Desafío 022")
 Entrada: ("Hello, world!", 7, 12)
 Salida esperada: "world"
 """
-# Tu código aquí
+
+entrada = ("Hello, world!", 7, 12)
+def slice_substring(string, start, end):
+    return string[start:end]
+
+print(slice_substring(*entrada))
 
 # ========================================
 # === 023: concatenate_strings ===
@@ -45,7 +50,7 @@ print("Desafío 023")
 Entrada: ("Hello", "World")
 Salida esperada: "HelloWorld"
 """
-# Tu código aquí
+
 
 # ========================================
 # === 024: string_length ===
