@@ -43,3 +43,41 @@
 | 026  | Cambiar mayúsculas y minúsculas             | ✅ Completado |
 | 027  | Dividir oración en palabras                 | ✅ Completado |
 | 028  | Unir palabras en oración                    | ✅ Completado |
+
+---
+
+# 🧠 Estrategia y Seguimiento del Proyecto Code500
+
+## 🎯 Objetivo principal
+Completar 500 desafíos de programación en Python, mejorando habilidades reales y documentando el proceso como base para un portafolio.
+
+---
+
+## ✅ Estrategia de práctica
+- Practicar en bloques de 10 ejercicios por archivo (`01-10`, `11-20`, etc.)
+- Usar formato estándar con encabezado, print, descripción, ejemplo y espacio para código
+- Cada bloque ataca habilidades específicas (strings, listas, diccionarios, etc.)
+
+---
+
+## 📊 Diagnóstico y Evaluaciones
+- Examen inicial completado: [✅]
+- Áreas débiles detectadas: strings complejos, diccionarios, estructuras anidadas
+- Mini-evaluación próxima: luego del bloque `060` [⏳]
+
+---
+
+## 💭 Ideas a aplicar
+- Hacer examen nuevo cada 50 ejercicios
+- Hacer hoja visual tipo dashboard (✅ implementado)
+- Subir todo a GitHub y documentar en README
+- Crear mini-proyectos temáticos (luego del ejercicio 100)
+- Exportar mejores soluciones a un repositorio pro
+- Hacer videos explicando mis soluciones (futuro)
+
+---
+
+## 🔄 Próximos pasos
+- [ ] Crear plantilla para bloque `49–58`
+- [ ] Preparar segundo examen después del bloque 060
+- [ ] Reforzar comprensión de listas y diccionarios
