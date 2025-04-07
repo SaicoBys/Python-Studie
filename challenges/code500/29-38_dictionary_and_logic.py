@@ -1,92 +1,166 @@
 # ========================================
-# 29-38: Diccionarios y Lógica Aplicada
+# === 029: crear_diccionario_personas ===
 # ========================================
+print("Desafío 029")
 
 """
-Ejercicios enfocados en reforzar:
-- Diccionarios
-- Conteo de elementos
-- Lógica con listas y condicionales
-- Mutabilidad y referencias
+📌 CHALLENGE #029: crear_diccionario_personas
+- Crea un diccionario con las siguientes personas: "Juan": 28, "Ana": 22, "Luis": 35.
+- Luego, agrega una nueva persona: "Marta": 30.
+
+🧠 Ejemplo:
+Entrada: {}
+Salida esperada: {"Juan": 28, "Ana": 22, "Luis": 35, "Marta": 30}
 """
+# Tu código aquí
 
-# ----------------------------------------
-# 29. Crear un diccionario con 3 personas y sus edades
-# ----------------------------------------
-
-# Crea un diccionario con las siguientes personas:
-# "Juan": 28, "Ana": 22, "Luis": 35
-
-# Luego, agrega una nueva persona: "Marta": 30
-
-
-# ----------------------------------------
-# 30. Acceder a valores del diccionario
-# ----------------------------------------
-
-# Imprime la edad de "Luis" usando el diccionario creado
-
-
-# ----------------------------------------
-# 31. Actualizar valores en el diccionario
-# ----------------------------------------
-
-# Cambia la edad de "Ana" a 23
-
-
-# ----------------------------------------
-# 32. Verificar si una clave existe en el diccionario
-# ----------------------------------------
-
-# Escribe un programa que verifique si "Carlos" está en el diccionario
-
-
-# ----------------------------------------
-# 33. Contar cuántas veces aparece cada letra en un string
-# ----------------------------------------
-
-# Ejemplo de string: "banana"
-# Resultado esperado: {'b': 1, 'a': 3, 'n': 2}
-
-
-# ----------------------------------------
-# 34. Crear un diccionario desde dos listas
-# ----------------------------------------
-
-# Usando estas listas:
-# nombres = ["Alice", "Bob", "Charlie"]
-# edades = [25, 30, 35]
-# Une ambas listas en un diccionario
-
-
-# ----------------------------------------
-# 35. Filtrar elementos pares desde un diccionario de edades
-# ----------------------------------------
-
-# Usa el diccionario del ejercicio 29 y devuelve un nuevo diccionario solo con las personas que tienen edad par
-
-
-# ----------------------------------------
-# 36. Contar elementos repetidos en una lista
-# ----------------------------------------
-
-# Dada la lista:
-# colores = ["rojo", "azul", "rojo", "verde", "azul", "rojo"]
-# Devuelve un diccionario con la cantidad de veces que aparece cada color
-
-
-# ----------------------------------------
-# 37. Crear una función que devuelva las claves de un diccionario que tengan valores mayores a 30
-# ----------------------------------------
-
-# Usa el diccionario del ejercicio 29 como base
-
-
-# ----------------------------------------
-# 38. Crear un diccionario donde cada letra del string sea una clave y su valor sea True si es vocal, False si no
-# ----------------------------------------
-
-# Ejemplo con el string: "python"
-# Resultado: {'p': False, 'y': False, 't': False, 'h': False, 'o': True, 'n': False}
 
 # ========================================
+# === 030: acceder_valores_diccionario ===
+# ========================================
+print("Desafío 030")
+
+"""
+📌 CHALLENGE #030: acceder_valores_diccionario
+- Imprime la edad de "Luis" usando el diccionario creado.
+
+🧠 Ejemplo:
+Entrada: {"Juan": 28, "Ana": 22, "Luis": 35}
+Salida esperada: 35
+"""
+# Tu código aquí
+
+
+# ========================================
+# === 031: actualizar_valores_diccionario ===
+# ========================================
+print("Desafío 031")
+
+"""
+📌 CHALLENGE #031: actualizar_valores_diccionario
+- Cambia la edad de "Ana" a 23.
+
+🧠 Ejemplo:
+Entrada: {"Juan": 28, "Ana": 22, "Luis": 35}
+Salida esperada: {"Juan": 28, "Ana": 23, "Luis": 35}
+"""
+# Tu código aquí
+
+
+# ========================================
+# === 032: verificar_clave_diccionario ===
+# ========================================
+print("Desafío 032")
+
+"""
+📌 CHALLENGE #032: verificar_clave_diccionario
+- Escribe un programa que verifique si "Carlos" está en el diccionario.
+
+🧠 Ejemplo:
+Entrada: {"Juan": 28, "Ana": 22, "Luis": 35}
+Salida esperada: False
+"""
+# Tu código aquí
+
+
+# ========================================
+# === 033: contar_letras_string ===
+# ========================================
+print("Desafío 033")
+
+"""
+📌 CHALLENGE #033: contar_letras_string
+- Contar cuántas veces aparece cada letra en un string.
+- Ejemplo de string: "banana".
+- Resultado esperado: {'b': 1, 'a': 3, 'n': 2}.
+
+🧠 Ejemplo:
+Entrada: "banana"
+Salida esperada: {'b': 1, 'a': 3, 'n': 2}
+"""
+# Tu código aquí
+
+
+# ========================================
+# === 034: crear_diccionario_desde_listas ===
+# ========================================
+print("Desafío 034")
+
+"""
+📌 CHALLENGE #034: crear_diccionario_desde_listas
+- Usando estas listas: nombres = ["Alice", "Bob", "Charlie"] y edades = [25, 30, 35].
+- Une ambas listas en un diccionario.
+
+🧠 Ejemplo:
+Entrada: (["Alice", "Bob", "Charlie"], [25, 30, 35])
+Salida esperada: {"Alice": 25, "Bob": 30, "Charlie": 35}
+"""
+# Tu código aquí
+
+
+# ========================================
+# === 035: filtrar_elementos_pares ===
+# ========================================
+print("Desafío 035")
+
+"""
+📌 CHALLENGE #035: filtrar_elementos_pares
+- Usa el diccionario del ejercicio 29 y devuelve un nuevo diccionario solo con las personas que tienen edad par.
+
+🧠 Ejemplo:
+Entrada: {"Juan": 28, "Ana": 22, "Luis": 35, "Marta": 30}
+Salida esperada: {"Juan": 28, "Ana": 22, "Marta": 30}
+"""
+# Tu código aquí
+
+
+# ========================================
+# === 036: contar_elementos_repetidos ===
+# ========================================
+print("Desafío 036")
+
+"""
+📌 CHALLENGE #036: contar_elementos_repetidos
+- Dada la lista: colores = ["rojo", "azul", "rojo", "verde", "azul", "rojo"].
+- Devuelve un diccionario con la cantidad de veces que aparece cada color.
+
+🧠 Ejemplo:
+Entrada: ["rojo", "azul", "rojo", "verde", "azul", "rojo"]
+Salida esperada: {"rojo": 3, "azul": 2, "verde": 1}
+"""
+# Tu código aquí
+
+
+# ========================================
+# === 037: claves_mayores_a_30 ===
+# ========================================
+print("Desafío 037")
+
+"""
+📌 CHALLENGE #037: claves_mayores_a_30
+- Crear una función que devuelva las claves de un diccionario que tengan valores mayores a 30.
+- Usa el diccionario del ejercicio 29 como base.
+
+🧠 Ejemplo:
+Entrada: {"Juan": 28, "Ana": 22, "Luis": 35, "Marta": 30}
+Salida esperada: ["Luis"]
+"""
+# Tu código aquí
+
+
+# ========================================
+# === 038: diccionario_letras_vocales ===
+# ========================================
+print("Desafío 038")
+
+"""
+📌 CHALLENGE #038: diccionario_letras_vocales
+- Crear un diccionario donde cada letra del string sea una clave y su valor sea True si es vocal, False si no.
+- Ejemplo con el string: "python".
+- Resultado: {'p': False, 'y': False, 't': False, 'h': False, 'o': True, 'n': False}.
+
+🧠 Ejemplo:
+Entrada: "python"
+Salida esperada: {'p': False, 'y': False, 't': False, 'h': False, 'o': True, 'n': False}
+"""
+# Tu código aquí

@@ -1,88 +1,155 @@
 # ========================================
-# 39-48: Estructuras Anidadas y Comprensión de Listas
+# === 039: crear_lista_diccionarios ===
 # ========================================
+print("Desafío 039")
 
 """
-Ejercicios enfocados en reforzar:
-- Estructuras anidadas (listas de diccionarios, diccionarios con listas)
-- Iteración de estructuras complejas
-- Comprensión de listas y filtros
+📌 CHALLENGE #039: crear_lista_diccionarios
+- Crear una lista de diccionarios con datos de 3 estudiantes.
+- Cada estudiante debe tener nombre, edad y lista de calificaciones.
+
+🧠 Ejemplo:
+Entrada: ...
+Salida esperada: ...
 """
-
-# ----------------------------------------
-# 39. Crear una lista de diccionarios con datos de 3 estudiantes
-# ----------------------------------------
-
-# Cada estudiante debe tener:
-# - nombre
-# - edad
-# - lista de calificaciones
-
-# ----------------------------------------
-# 40. Calcular el promedio de calificaciones del segundo estudiante
-# ----------------------------------------
-
-# Usa la lista de estudiantes del ejercicio 39
-
-
-# ----------------------------------------
-# 41. Agregar una nueva calificación a todos los estudiantes
-# ----------------------------------------
-
-# Añade un número (por ejemplo, 100) a la lista de calificaciones de cada estudiante
-
-
-# ----------------------------------------
-# 42. Crear un diccionario con listas como valores
-# ----------------------------------------
-
-# Crea un diccionario donde:
-# - la clave sea una materia ("matematicas", "historia")
-# - el valor sea una lista de estudiantes inscritos
-
-
-# ----------------------------------------
-# 43. Usar comprensión de listas para obtener los nombres de estudiantes mayores de 20
-# ----------------------------------------
-
-# Usa la lista del ejercicio 39
-
-
-# ----------------------------------------
-# 44. Crear un diccionario que asocie cada nombre con su promedio
-# ----------------------------------------
-
-# Usa la lista del ejercicio 39
-# Resultado esperado: {"juan": 87.5, "ana": 90.0, ...}
-
-
-# ----------------------------------------
-# 45. Filtrar diccionarios de una lista
-# ----------------------------------------
-
-# De la lista del ejercicio 39, crea una nueva lista que solo incluya a los estudiantes con promedio mayor a 85
-
-
-# ----------------------------------------
-# 46. Usar comprensión de listas para aplanar una lista de listas
-# ----------------------------------------
-
-# Ejemplo de lista:
-# notas = [[10, 9], [8, 7], [6]]
-# Resultado esperado: [10, 9, 8, 7, 6]
-
-
-# ----------------------------------------
-# 47. Crear una función que cuente cuántos estudiantes tienen al menos una calificación mayor a 90
-# ----------------------------------------
-
-
-# ----------------------------------------
-# 48. Crear un diccionario invertido
-# ----------------------------------------
-
-# Dado este diccionario:
-# original = {"a": 1, "b": 2, "c": 3}
-# Resultado esperado: {1: "a", 2: "b", 3: "c"}
+# Tu código aquí
 
 # ========================================
+# === 040: calcular_promedio_estudiante ===
+# ========================================
+print("Desafío 040")
+
+"""
+📌 CHALLENGE #040: calcular_promedio_estudiante
+- Calcular el promedio de calificaciones del segundo estudiante.
+- Usa la lista de estudiantes del ejercicio 039.
+
+🧠 Ejemplo:
+Entrada: ...
+Salida esperada: ...
+"""
+# Tu código aquí
+
+# ========================================
+# === 041: agregar_calificacion ===
+# ========================================
+print("Desafío 041")
+
+"""
+📌 CHALLENGE #041: agregar_calificacion
+- Agregar una nueva calificación a todos los estudiantes.
+- Añade un número a la lista de calificaciones de cada estudiante.
+
+🧠 Ejemplo:
+Entrada: ...
+Salida esperada: ...
+"""
+# Tu código aquí
+
+# ========================================
+# === 042: crear_diccionario_materias ===
+# ========================================
+print("Desafío 042")
+
+"""
+📌 CHALLENGE #042: crear_diccionario_materias
+- Crear un diccionario donde la clave sea una materia y el valor una lista de estudiantes inscritos.
+
+🧠 Ejemplo:
+Entrada: ...
+Salida esperada: ...
+"""
+# Tu código aquí
+
+# ========================================
+# === 043: nombres_estudiantes_mayores_20 ===
+# ========================================
+print("Desafío 043")
+
+"""
+📌 CHALLENGE #043: nombres_estudiantes_mayores_20
+- Usar comprensión de listas para obtener los nombres de estudiantes mayores de 20.
+- Usa la lista del ejercicio 039.
+
+🧠 Ejemplo:
+Entrada: ...
+Salida esperada: ...
+"""
+# Tu código aquí
+
+# ========================================
+# === 044: diccionario_promedios ===
+# ========================================
+print("Desafío 044")
+
+"""
+📌 CHALLENGE #044: diccionario_promedios
+- Crear un diccionario que asocie cada nombre con su promedio.
+- Usa la lista del ejercicio 039.
+
+🧠 Ejemplo:
+Entrada: ...
+Salida esperada: ...
+"""
+# Tu código aquí
+
+# ========================================
+# === 045: filtrar_estudiantes_promedio ===
+# ========================================
+print("Desafío 045")
+
+"""
+📌 CHALLENGE #045: filtrar_estudiantes_promedio
+- Filtrar diccionarios de una lista para incluir solo a estudiantes con promedio mayor a 85.
+- Usa la lista del ejercicio 039.
+
+🧠 Ejemplo:
+Entrada: ...
+Salida esperada: ...
+"""
+# Tu código aquí
+
+# ========================================
+# === 046: aplanar_lista_de_listas ===
+# ========================================
+print("Desafío 046")
+
+"""
+📌 CHALLENGE #046: aplanar_lista_de_listas
+- Usar comprensión de listas para aplanar una lista de listas.
+
+🧠 Ejemplo:
+Entrada: [[10, 9], [8, 7], [6]]
+Salida esperada: [10, 9, 8, 7, 6]
+"""
+# Tu código aquí
+
+# ========================================
+# === 047: contar_estudiantes_calificacion ===
+# ========================================
+print("Desafío 047")
+
+"""
+📌 CHALLENGE #047: contar_estudiantes_calificacion
+- Crear una función que cuente cuántos estudiantes tienen al menos una calificación mayor a 90.
+
+🧠 Ejemplo:
+Entrada: ...
+Salida esperada: ...
+"""
+# Tu código aquí
+
+# ========================================
+# === 048: diccionario_invertido ===
+# ========================================
+print("Desafío 048")
+
+"""
+📌 CHALLENGE #048: diccionario_invertido
+- Crear un diccionario invertido a partir de un diccionario dado.
+
+🧠 Ejemplo:
+Entrada: {"a": 1, "b": 2, "c": 3}
+Salida esperada: {1: "a", 2: "b", 3: "c"}
+"""
+# Tu código aquí
