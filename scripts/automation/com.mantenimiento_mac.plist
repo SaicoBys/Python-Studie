@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Label: Identificador único para el proceso de automatización -->
+    <key>Label</key>
+    <string>com.mantenimiento_mac</string>
+    
+    <!-- ProgramArguments: Comando y parámetros que se ejecutarán -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>open</string> <!-- Comando para abrir aplicaciones -->
+        <string>-a</string>  <!-- Especifica que se abrirá una aplicación por nombre -->
+        <string>Terminal</string> <!-- Nombre de la aplicación a abrir -->
+        <string>/Users/saicobys/Developer/script/maintenance/mantenimiento_mac.sh</string> <!-- Ruta del script a ejecutar en la terminal -->
+    </array>
+    
+    <!-- StartCalendarInterval: Define cuándo se iniciará este proceso -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key> <!-- Día de la semana (1 = domingo, 2 = lunes, etc.) -->
+        <integer>1</integer>
+        <key>Hour</key> <!-- Hora del día en formato 24 horas -->
+        <integer>9</integer>
+    </dict>
+    
+    <!-- RunAtLoad: Si es true, el proceso se ejecuta al cargar el agente. Aquí está desactivado -->
+    <key>RunAtLoad</key>
+    <false/>
+    
+    <!-- EnvironmentVariables: Define variables de entorno que estarán disponibles para el script -->
+    <key>EnvironmentVariables</key>
+    <dict>
+        <key>OPEN_IN_TERMINAL</key>
+        <string>1</string> <!-- Variable para controlar si se debe abrir la Terminal automáticamente -->
+    </dict>
+    
+    <!-- StandardOutPath: Ruta del archivo para la salida estándar del script -->
+    <key>StandardOutPath</key>
+    <string>/tmp/com.mantenimiento_mac.out</string>
+    
+    <!-- StandardErrorPath: Ruta del archivo para la salida de error del script -->
+    <key>StandardErrorPath</key>
+    <string>/tmp/com.mantenimiento_mac.err</string>
+</dict>
+</plist>
