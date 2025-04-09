@@ -53,7 +53,7 @@ Salida esperada: "HelloWorld"
 
 entrada = ("Hello", "World")
 def concatenate_strings(word1, word2):
-    full_string = word1 + word2
+    full_string = f"{word1}{word2}"
     return full_string
 
 print(concatenate_strings(*entrada))
@@ -159,4 +159,8 @@ print("Desafío 028")
 Entrada: ["Python", "is", "fun"]
 Salida esperada: "Python is fun"
 """
-# Tu código aquí
+def join_words_into_sentence(join_words):
+    result = "".join(join_words)
+    return result
+
+print(join_words_into_sentence(entrada))
