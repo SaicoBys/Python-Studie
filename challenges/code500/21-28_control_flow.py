@@ -138,7 +138,13 @@ print("Desafío 027")
 Entrada: "Python is fun"
 Salida esperada: ["Python", "is", "fun"]
 """
-# Tu código aquí
+
+entrada = "Python is fun"
+def split_sentence_into_words(sentence):
+    words = sentence.split()
+    return words
+
+print(split_sentence_into_words(entrada))
 
 # ========================================
 # === 028: join_words_into_sentence ===
