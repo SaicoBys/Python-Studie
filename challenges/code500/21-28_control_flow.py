@@ -52,8 +52,8 @@ Salida esperada: "HelloWorld"
 """
 
 entrada = ("Hello", "World")
-def concatenate_strings(world1, world2):
-    full_string = world1 + world2
+def concatenate_strings(word1, word2):
+    full_string = word1 + word2
     return full_string
 
 print(concatenate_strings(*entrada))
@@ -72,8 +72,8 @@ Entrada: "Hello"
 Salida esperada: 5
 """
 entrada = "Hello"
-def string_length(world):
-    return len(world)
+def string_length(word):
+    return len(word)
 
 print(string_length(entrada))
 
@@ -92,7 +92,13 @@ c
 a
 t
 """
-# Tu código aquí
+
+entrada = "cat"
+def iterate_string(word):
+    for i in word:
+        print(i)
+
+iterate_string(entrada)
 
 # ========================================
 # === 026: change_case ===
