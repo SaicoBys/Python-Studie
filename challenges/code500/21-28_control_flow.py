@@ -51,6 +51,12 @@ Entrada: ("Hello", "World")
 Salida esperada: "HelloWorld"
 """
 
+entrada = ("Hello", "World")
+def concatenate_strings(world1, world2):
+    full_string = world1 + world2
+    return full_string
+
+print(concatenate_strings(*entrada))
 
 # ========================================
 # === 024: string_length ===
