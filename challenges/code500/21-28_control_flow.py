@@ -71,7 +71,11 @@ print("Desafío 024")
 Entrada: "Hello"
 Salida esperada: 5
 """
-# Tu código aquí
+entrada = "Hello"
+def string_length(world):
+    return len(world)
+
+print(string_length(entrada))
 
 # ========================================
 # === 025: iterate_string ===
