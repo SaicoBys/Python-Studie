@@ -115,7 +115,16 @@ print("Desafío 026")
 Entrada: "hello world"
 Salida esperada: ("hello world", "HELLO WORLD", "Hello World")
 """
-# Tu código aquí
+
+entrada = "hello word"
+def change_case(word):
+    lowercase = word.lower()
+    uppercase = word.upper()
+    titlecase = word.title()
+
+    return (lowercase, uppercase, titlecase)
+
+print(change_case(entrada))
 
 # ========================================
 # === 027: split_sentence_into_words ===
