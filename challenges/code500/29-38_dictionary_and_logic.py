@@ -12,8 +12,16 @@ print("Desafío 029")
 Entrada: {}
 Salida esperada: {"Juan": 28, "Ana": 22, "Luis": 35, "Marta": 30}
 """
-# Tu código aquí
 
+personas = {
+    "Jacob": 28,
+    "Ana": 22,
+    "Luis": 35,
+    "Marta": 30
+}
+
+personas["Marta"] = 30
+print(personas)
 
 # ========================================
 # === 030: acceder_valores_diccionario ===
