@@ -20,7 +20,7 @@ personas = {
     "Marta": 30
 }
 
-personas["Marta"] = 30
+personas["Marta"] = 31
 print(personas)
 
 # ========================================
@@ -36,7 +36,8 @@ print("Desafío 030")
 Entrada: {"Juan": 28, "Ana": 22, "Luis": 35}
 Salida esperada: 35
 """
-# Tu código aquí
+
+print(personas.get("Luis", "No value"))
 
 
 # ========================================
@@ -52,8 +53,9 @@ print("Desafío 031")
 Entrada: {"Juan": 28, "Ana": 22, "Luis": 35}
 Salida esperada: {"Juan": 28, "Ana": 23, "Luis": 35}
 """
-# Tu código aquí
 
+personas["Ana"] = 23
+print(personas["Ana"])
 
 # ========================================
 # === 032: verificar_clave_diccionario ===
@@ -68,8 +70,8 @@ print("Desafío 032")
 Entrada: {"Juan": 28, "Ana": 22, "Luis": 35}
 Salida esperada: False
 """
-# Tu código aquí
 
+print("Carlos" in personas)
 
 # ========================================
 # === 033: contar_letras_string ===

@@ -4,95 +4,115 @@
 
 """
 ## 📌 Descripción
-Un diccionario en Python es una estructura de datos que almacena información en pares **clave-valor**.
 
-📌 **Características principales:**
-- Las claves deben ser únicas e inmutables (por ejemplo: strings, números, tuplas).
-- Los valores pueden ser de cualquier tipo.
-- Los diccionarios son **mutables**, es decir, se pueden modificar después de su creación.
-- Se accede a los valores usando la clave (no con índices como en las listas).
+Un diccionario en Python es una estructura de datos que almacena información en **pares clave-valor**.
+Cada **clave** es única e inmutable (por ejemplo: cadenas, números, tuplas) y se utiliza para acceder a su **valor**, que puede ser de cualquier tipo.
+Además, los diccionarios son **mutables**, lo que permite agregar, modificar o eliminar sus elementos después de su creación.
 
-📌 Sintaxis básica:
+📌 **Sintaxis Básica:**
     mi_diccionario = {
         'clave1': valor1,
-        'clave2': valor2
+        'clave2': valor2,
+        ...
     }
-
 """
 
 # ========================================
-# Ejemplo básico de diccionario
+# Ejemplo Básico de Diccionario
 # ========================================
 
+# Creación de un diccionario con datos de una persona
 persona = {
     "nombre": "Jacob",
     "edad": 28,
     "ciudad": "Santiago"
 }
 
-print(persona["nombre"])  # Accede al valor de la clave "nombre"
+print(persona["nombre"])  # Accede e imprime el valor asociado a la clave "nombre"
 
 # ========================================
-# Agregar, modificar y eliminar elementos
+# Agregar, Modificar y Eliminar Elementos
 # ========================================
 
-# Agregar una nueva clave
+"""
+1️⃣ Agregar Elementos:  
+   Para insertar un nuevo par clave-valor, simplemente se asigna el valor a la nueva clave:
+       persona["profesion"] = "Desarrollador"
+
+2️⃣ Modificar Elementos:  
+   Para cambiar el valor de una clave existente:
+       persona["edad"] = 29
+
+3️⃣ Eliminar Elementos:  
+   Se puede eliminar un elemento usando la instrucción 'del':
+       del persona["ciudad"]
+"""
+
+# Agregar nueva clave
 persona["profesion"] = "Desarrollador"
 
-# Modificar el valor de una clave existente
+# Modificar valor existente
 persona["edad"] = 29
 
 # Eliminar una clave
 del persona["ciudad"]
 
-print(persona)
+print(persona)  # Muestra el diccionario actualizado
 
 # ========================================
-# Iterar sobre un diccionario
+# Iterar sobre Diccionarios
 # ========================================
 
 """
-Podemos iterar sobre claves, valores o ambos con métodos específicos:
-- .keys() → devuelve todas las claves
-- .values() → devuelve todos los valores
-- .items() → devuelve tuplas (clave, valor)
+Puedes recorrer un diccionario de diferentes maneras:
+
+- **Claves:** Con .keys()
+- **Valores:** Con .values()
+- **Pares (clave, valor):** Con .items()
 """
 
+# Iteración sobre las claves
 for clave in persona.keys():
     print(f"Clave: {clave}")
 
+# Iteración sobre los valores
 for valor in persona.values():
     print(f"Valor: {valor}")
 
+# Iteración sobre pares clave-valor
 for clave, valor in persona.items():
     print(f"{clave}: {valor}")
 
 # ========================================
-# Comprobar si una clave existe
+# Comprobación de la Existencia de una Clave
 # ========================================
+
+"""
+Antes de acceder a un valor, es recomendable verificar si la clave existe para evitar errores.
+"""
 
 if "nombre" in persona:
-    print("La clave 'nombre' existe en el diccionario.")
+    print("La clave 'nombre' existe y su valor es:", persona["nombre"])
 
 # ========================================
-# Métodos útiles de diccionarios
-# ========================================
-
-"""
-- .get(clave, valor_por_defecto): devuelve el valor de una clave, o el valor por defecto si no existe.
-- .pop(clave): elimina una clave y devuelve su valor.
-- .clear(): elimina todos los elementos.
-"""
-
-print(persona.get("nombre", "Desconocido"))  # "Jacob"
-print(persona.get("altura", "No especificada"))  # Valor por defecto
-
-# ========================================
-# Diccionarios anidados
+# Métodos Útiles en Diccionarios
 # ========================================
 
 """
-Podemos tener diccionarios dentro de diccionarios (estructura anidada).
+- .get(clave, valor_por_defecto): Retorna el valor asociado a 'clave'. Si la clave no existe, devuelve 'valor_por_defecto'.
+- .pop(clave): Elimina la clave del diccionario y retorna su valor.
+- .clear(): Elimina todos los elementos del diccionario.
+"""
+
+print(persona.get("nombre", "Desconocido"))
+print(persona.get("altura", "No especificada"))
+
+# ========================================
+# Diccionarios Anidados
+# ========================================
+
+"""
+Los diccionarios anidados permiten tener un diccionario dentro de otro para representar datos más complejos.
 """
 
 estudiantes = {
@@ -100,84 +120,72 @@ estudiantes = {
     "Ana": {"edad": 22, "carrera": "Medicina"}
 }
 
-print(estudiantes["Ana"]["carrera"])  # Accede al valor anidado
-
-# ========================================
-# Resumen
-# ========================================
-
-"""
-## 📌 Resumen
-
-- Un diccionario almacena datos en pares clave-valor.
-- Se accede a los valores usando su clave.
-- Las claves deben ser únicas y de tipo inmutable.
-- Los valores pueden ser de cualquier tipo.
-- Métodos comunes: .get(), .pop(), .keys(), .values(), .items()
-- Pueden usarse dentro de estructuras anidadas para representar datos complejos.
-"""
+print(estudiantes["Ana"]["carrera"])  # Accede al valor anidado de 'carrera' de Ana
 
 # ========================================
 # Ejercicios de Práctica
 # ========================================
 
 """
-## 🧠 Ejercicios de práctica para diccionarios
+Resuelve los siguientes ejercicios para practicar:
 
-Resuelve los siguientes ejercicios para practicar la creación, acceso y manipulación de diccionarios.
+1️⃣ Crear un diccionario con los datos de una persona:  
+   Define un diccionario con las claves: 'nombre', 'edad' y 'país'.
+   
+       persona = {
+           "nombre": "Nicole",
+           "edad": 24,
+           "país": "México"
+       }
+
+2️⃣ Agregar la clave 'profesión':  
+   Añade la clave con el valor que prefieras.
+   
+       persona["profesión"] = "Bailarina"
+
+3️⃣ Modificar el valor de 'edad':
+   
+       persona["edad"] = 25
+
+4️⃣ Verificar la existencia de la clave 'nombre' e imprimirla:
+   
+       if "nombre" in persona:
+           print(persona["nombre"])
+
+5️⃣ Eliminar la clave 'país' y mostrar el diccionario resultante:
+   
+       del persona["país"]
+       print(persona)
+
+6️⃣ Crear un diccionario de estudiantes anidados:  
+   Usa nombres como claves y otro diccionario como valor (con 'edad' y 'carrera').
+   
+       estudiantes = {
+           "Carlos": {"edad": 21, "carrera": "Arquitectura"},
+           "Laura": {"edad": 23, "carrera": "Biología"}
+       }
+
+7️⃣ Acceder al valor 'carrera' del estudiante 'Laura':
+   
+       print(estudiantes["Laura"]["carrera"])
 """
 
-# --------------------------------------------------
-# 1️⃣ Crea un diccionario con los datos de una persona: nombre, edad y país
-# --------------------------------------------------
+# ========================================
+# Resumen
+# ========================================
 
-persona = {
-    "nombre": "",
-    "edad": 0,
-    "país": ""
-}
+"""
+🔑 Conceptos Clave:
 
-# --------------------------------------------------
-# 2️⃣ Agrega una clave "profesión" con cualquier valor
-# --------------------------------------------------
-
-persona["profesión"] = ""
-
-# --------------------------------------------------
-# 3️⃣ Modifica el valor de "edad"
-# --------------------------------------------------
-
-persona["edad"] = 30  # Cambia 30 por la edad deseada
-
-# --------------------------------------------------
-# 4️⃣ Verifica si la clave "nombre" está en el diccionario e imprímela
-# --------------------------------------------------
-
-if "nombre" in persona:
-    print(persona["nombre"])
-
-# --------------------------------------------------
-# 5️⃣ Elimina la clave "país" y muestra el diccionario resultante
-# --------------------------------------------------
-
-del persona["país"]
-print(persona)
-
-# --------------------------------------------------
-# 6️⃣ Crea un diccionario de estudiantes con nombres como claves y otro diccionario como valor (edad y carrera)
-# --------------------------------------------------
-
-estudiantes = {
-    "Carlos": {"edad": 21, "carrera": "Arquitectura"},
-    "Laura": {"edad": 23, "carrera": "Biología"}
-}
-
-# --------------------------------------------------
-# 7️⃣ Accede al valor "carrera" del estudiante "Juan"
-# --------------------------------------------------
-
-print(estudiantes["Carlos"]["carrera"])  # Cambia "Carlos" por "Juan" si lo deseas
+- Diccionarios: Estructuras de datos que almacenan pares clave-valor.
+- Claves: Únicas e inmutables.
+- Valores: Pueden ser de cualquier tipo y pueden modificarse.
+- Operaciones: Se pueden agregar, modificar, eliminar y verificar elementos de manera sencilla.
+- Iteración: Existen métodos para recorrer claves, valores o ambos.
+- Métodos Útiles: .get(), .pop(), y .clear() facilitan el manejo de los diccionarios.
+- Diccionarios Anidados: Permiten representar datos complejos mediante estructuras jerárquicas.
+"""
 
 # ========================================
-# Fin del Documento
+# Fin de Apuntes
 # ========================================
