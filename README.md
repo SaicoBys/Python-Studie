@@ -5,7 +5,7 @@
 | Bloque 01    | 001–010    | Fundamentos, bucles, lógica básica     | ✅ Completado | 🟢 Fuerte        |
 | Bloque 02    | 011–020    | Strings y métodos                      | ✅ Completado | 🟡 En progreso   |
 | Bloque 03    | 021–028    | Strings + flujo de control             | ✅ Completado | 🟢 Fuerte        |
-| Bloque 04    | 029–038    | Diccionarios y lógica aplicada         | 🔄 En progreso| 🔴 Débil         |
+| Bloque 04    | 029–038    | Diccionarios y lógica aplicada         | ✅ Completado | 🟡 En progreso   |
 | Bloque 05    | 039–048    | Estructuras anidadas y comprehensions  | 🔄 En progreso| 🔴 Débil         |
 | Bloque 06    | 049–058    | Próximos ejercicios                    | ⏳ Pendiente  | 🔘 Por evaluar   |
 
@@ -43,6 +43,16 @@
 | 026  | Cambiar mayúsculas y minúsculas             | ✅ Completado |
 | 027  | Dividir oración en palabras                 | ✅ Completado |
 | 028  | Unir palabras en oración                    | ✅ Completado |
+| 029  | Crear diccionario a partir de listas        | ✅ Completado |
+| 030  | Verificar existencia de clave en diccionario | ✅ Completado |
+| 031  | Contar elementos en un diccionario          | ✅ Completado |
+| 032  | Obtener claves y valores de un diccionario   | ✅ Completado |
+| 033  | Filtrar diccionario por valor               | ✅ Completado |
+| 034  | Crear lista de tuplas a partir de diccionario| ✅ Completado |
+| 035  | Combinar dos diccionarios                   | ✅ Completado |
+| 036  | Crear un diccionario a partir de una lista  | ✅ Completado |
+| 037  | Clonar un diccionario                        | ✅ Completado |
+| 038  | Obtener el valor máximo de un diccionario    | ✅ Completado |
 
 ---
 
