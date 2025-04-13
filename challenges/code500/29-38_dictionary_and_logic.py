@@ -166,8 +166,20 @@ print("Desafío 036")
 Entrada: ["rojo", "azul", "rojo", "verde", "azul", "rojo"]
 Salida esperada: {"rojo": 3, "azul": 2, "verde": 1}
 """
-# Tu código aquí
 
+def contar_elementos_repetidos(color_list):
+    colors_count = {}
+
+    for color in color_list:
+        if color in colors_count:
+            colors_count[color] += 1
+        else:
+            colors_count[color] = 1
+    
+    return colors_count
+
+input_colors = ["rojo", "azul", "rojo", "verde", "azul", "rojo"]
+print(contar_elementos_repetidos(input_colors))
 
 # ========================================
 # === 037: claves_mayores_a_30 ===
@@ -183,8 +195,15 @@ print("Desafío 037")
 Entrada: {"Juan": 28, "Ana": 22, "Luis": 35, "Marta": 30}
 Salida esperada: ["Luis"]
 """
-# Tu código aquí
 
+def claves_mayores_a_30(personas):
+    result = []
+    for k, v in personas.items():
+        if v >= 30:
+            result.append(k)
+    return result
+
+print(claves_mayores_a_30(personas))        
 
 # ========================================
 # === 038: diccionario_letras_vocales ===
@@ -201,4 +220,16 @@ print("Desafío 038")
 Entrada: "python"
 Salida esperada: {'p': False, 'y': False, 't': False, 'h': False, 'o': True, 'n': False}
 """
-# Tu código aquí
+
+def diccionario_letras_vocales(string):
+    new_string = {}
+    vowels = "aeiou"
+
+    for letter in string.lower():
+        if letter in vowels:
+            new_string[letter] = True
+        else:
+            new_string[letter] = False
+    return new_string
+
+print(diccionario_letras_vocales("python"))
