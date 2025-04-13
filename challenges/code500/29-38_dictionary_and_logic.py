@@ -118,8 +118,16 @@ print("Desafío 034")
 Entrada: (["Alice", "Bob", "Charlie"], [25, 30, 35])
 Salida esperada: {"Alice": 25, "Bob": 30, "Charlie": 35}
 """
-# Tu código aquí
 
+def crear_diccionario_desde_listas(lst1, lst2):
+    diccionario = {}
+    for k, v in zip(lst1, lst2):
+        diccionario[k] = v
+    return diccionario
+
+nombres = ["Alice", "Bob", "Charlie"]
+edades = [25, 30, 35]
+print(crear_diccionario_desde_listas(nombres, edades))
 
 # ========================================
 # === 035: filtrar_elementos_pares ===
