@@ -6,8 +6,7 @@
 ## 📌 Descripción
 
 Un diccionario en Python es una estructura de datos que almacena información en **pares clave-valor**.
-Cada **clave** es única e inmutable (por ejemplo: cadenas, números, tuplas) y se utiliza para acceder a su **valor**, que puede ser de cualquier tipo.
-Además, los diccionarios son **mutables**, lo que permite agregar, modificar o eliminar sus elementos después de su creación.
+Cada **clave** es única e inmutable (por ejemplo: cadenas, números, tuplas) y se utiliza para acceder a su **valor**, que puede ser de cualquier tipo. Es importante destacar que los diccionarios son colecciones **no ordenadas** de pares clave-valor. Además, los diccionarios son **mutables**, lo que permite agregar, modificar o eliminar sus elementos después de su creación.
 
 📌 **Sintaxis Básica:**
     mi_diccionario = {
@@ -15,6 +14,7 @@ Además, los diccionarios son **mutables**, lo que permite agregar, modificar o 
         'clave2': valor2,
         ...
     }
+Los valores pueden ser de cualquier tipo, pero las claves deben ser inmutables.
 """
 
 # ========================================
@@ -29,6 +29,9 @@ persona = {
 }
 
 print(persona["nombre"])  # Accede e imprime el valor asociado a la clave "nombre"
+
+# Acceso y escritura de datos en diccionarios:
+# Para acceder a un valor, se utiliza su clave. Si se desea cambiar el valor de una clave existente, se puede sobrescribir asignando un nuevo valor a la misma clave.
 
 # ========================================
 # Agregar, Modificar y Eliminar Elementos
@@ -58,6 +61,22 @@ persona["edad"] = 29
 del persona["ciudad"]
 
 print(persona)  # Muestra el diccionario actualizado
+
+# ========================================
+# Combinación de Diccionarios
+# ========================================
+
+"""
+Puedes combinar dos diccionarios utilizando el método .update(), que actualiza el diccionario existente con los pares clave-valor de otro diccionario.
+"""
+
+# Ejemplo de combinación de diccionarios
+nuevos_datos = {
+    "pais": "Chile",
+    "telefono": "123456789"
+}
+persona.update(nuevos_datos)  # Combina nuevos_datos en el diccionario persona
+print(persona)
 
 # ========================================
 # Iterar sobre Diccionarios
@@ -105,7 +124,19 @@ if "nombre" in persona:
 """
 
 print(persona.get("nombre", "Desconocido"))
-print(persona.get("altura", "No especificada"))
+print(persona.get("altura", "No especificada"))  # Ejemplo de uso de get con valor por defecto
+
+# ========================================
+# Ejemplo del Método .pop()
+# ========================================
+
+"""
+El método .pop() elimina un par clave-valor del diccionario y devuelve el valor eliminado.
+"""
+
+telefono_eliminado = persona.pop("telefono", "No existe")  # Elimina el teléfono y devuelve su valor
+print("Teléfono eliminado:", telefono_eliminado)
+print(persona)
 
 # ========================================
 # Diccionarios Anidados

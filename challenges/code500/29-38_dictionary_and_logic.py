@@ -88,8 +88,21 @@ print("Desafío 033")
 Entrada: "banana"
 Salida esperada: {'b': 1, 'a': 3, 'n': 2}
 """
-# Tu código aquí
 
+cadena = "Banana"
+
+def contar_letras_string(cadena):
+    contador = {}
+
+    for letra in cadena:
+        if letra in contador:
+            contador[letra] += 1
+        else:
+            contador[letra] = 1
+    
+    return contador
+
+print(contar_letras_string(cadena))
 
 # ========================================
 # === 034: crear_diccionario_desde_listas ===
