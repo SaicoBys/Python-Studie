@@ -162,44 +162,59 @@ Resuelve los siguientes ejercicios para practicar:
 
 1️⃣ Crear un diccionario con los datos de una persona:  
    Define un diccionario con las claves: 'nombre', 'edad' y 'país'.
-   
-       persona = {
-           "nombre": "Nicole",
-           "edad": 24,
-           "país": "México"
-       }
+"""
 
+personas = {
+    "nombre": "Nicole",
+    "edad": 24,
+    "país": "Mexico"
+}
+
+"""
 2️⃣ Agregar la clave 'profesión':  
    Añade la clave con el valor que prefieras.
+"""
    
-       persona["profesión"] = "Bailarina"
+personas["profesión"] = "Developer"
 
+"""
 3️⃣ Modificar el valor de 'edad':
+"""
    
-       persona["edad"] = 25
+personas["edad"] = 25
 
+"""
 4️⃣ Verificar la existencia de la clave 'nombre' e imprimirla:
-   
-       if "nombre" in persona:
-           print(persona["nombre"])
+"""
 
+if "nombre" in persona:
+    print(persona["nombre"])
+
+"""
 5️⃣ Eliminar la clave 'país' y mostrar el diccionario resultante:
    
-       del persona["país"]
-       print(persona)
+del persona["país"]
+print(persona)
+"""
 
+del personas["país"]
+print(personas)
+
+"""
 6️⃣ Crear un diccionario de estudiantes anidados:  
    Usa nombres como claves y otro diccionario como valor (con 'edad' y 'carrera').
-   
-       estudiantes = {
-           "Carlos": {"edad": 21, "carrera": "Arquitectura"},
-           "Laura": {"edad": 23, "carrera": "Biología"}
-       }
-
-7️⃣ Acceder al valor 'carrera' del estudiante 'Laura':
-   
-       print(estudiantes["Laura"]["carrera"])
 """
+
+estudiantes = {
+    "Carlos": {"edad": 24, "carrera": "Arquitectura"},
+    "Laura": {"edad": 25, "carrera": "Biología"}
+}
+
+"""
+7️⃣ Acceder al valor 'carrera' del estudiante 'Laura':
+"""
+
+print(estudiantes["Laura"]["carrera"])
 
 # ========================================
 # Resumen
