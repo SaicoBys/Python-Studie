@@ -54,7 +54,7 @@ Entrada: {"Juan": 28, "Ana": 22, "Luis": 35}
 Salida esperada: {"Juan": 28, "Ana": 23, "Luis": 35}
 """
 
-personas["Ana"] = 23
+personas["Ana"] = 24
 print(personas["Ana"])
 
 # ========================================
@@ -89,20 +89,20 @@ Entrada: "banana"
 Salida esperada: {'b': 1, 'a': 3, 'n': 2}
 """
 
-cadena = "Banana"
+input_string = "Banana"
 
-def contar_letras_string(cadena):
-    contador = {}
+def contar_letras_en_string(input_string):
+    letter_count = {}
 
-    for letra in cadena:
-        if letra in contador:
-            contador[letra] += 1
+    for letra in input_string:
+        if letra in letter_count:
+            letter_count[letra] += 1
         else:
-            contador[letra] = 1
+            letter_count[letra] = 1
     
-    return contador
+    return letter_count
 
-print(contar_letras_string(cadena))
+print(contar_letras_en_string(input_string))
 
 # ========================================
 # === 034: crear_diccionario_desde_listas ===
@@ -119,11 +119,11 @@ Entrada: (["Alice", "Bob", "Charlie"], [25, 30, 35])
 Salida esperada: {"Alice": 25, "Bob": 30, "Charlie": 35}
 """
 
-def crear_diccionario_desde_listas(lst1, lst2):
-    diccionario = {}
-    for k, v in zip(lst1, lst2):
-        diccionario[k] = v
-    return diccionario
+def crear_diccionario_desde_listas(names, ages):
+    person_dict = {}
+    for k, v in zip(names, ages):
+        person_dict[k] = v
+    return person_dict
 
 nombres = ["Alice", "Bob", "Charlie"]
 edades = [25, 30, 35]
@@ -142,8 +142,15 @@ print("Desafío 035")
 Entrada: {"Juan": 28, "Ana": 22, "Luis": 35, "Marta": 30}
 Salida esperada: {"Juan": 28, "Ana": 22, "Marta": 30}
 """
-# Tu código aquí
 
+def filtrar_elementos_con_edad_par(people_dict):
+    even_age_people = {}
+    for k, v in people_dict.items():
+        if v % 2 == 0:
+            even_age_people[k] = v 
+    return even_age_people
+
+print(filtrar_elementos_con_edad_par(personas))
 
 # ========================================
 # === 036: contar_elementos_repetidos ===
