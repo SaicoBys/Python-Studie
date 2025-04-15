@@ -76,6 +76,44 @@
 # ✍️ Tu código aquí:
 
 
+# 🧠 BLOQUE 49–58: CONDICIONALES Y LÓGICA
+
+# ❓ Desafío 11:
+# Escribe una función que reciba un número y devuelva "Par" si es par, o "Impar" si es impar.
+
+# ✍️ Tu código aquí:
+
+
+# ❓ Desafío 12:
+# Escribe una función que reciba dos números y devuelva True si ambos son positivos.
+
+# ✍️ Tu código aquí:
+
+
+# ❓ Desafío 13:
+# Crea una función que reciba una edad y devuelva "Mayor de edad" si es 18 o más, de lo contrario "Menor de edad".
+
+# ✍️ Tu código aquí:
+
+
+# ❓ Desafío 14:
+# Escribe una función que reciba tres números y devuelva el mayor de ellos.
+
+# ✍️ Tu código aquí:
+
+
+# ❓ Desafío 15:
+# Crea una función que reciba una lista de números y devuelva cuántos son mayores que 100.
+
+# ✍️ Tu código aquí:
+
+
+# ❓ Desafío 16:
+# Crea una función que reciba un string y devuelva True si contiene la palabra "python".
+
+# ✍️ Tu código aquí:
+
+
 # ========================================
 # Fin del archivo de construcción activa
 # ========================================
