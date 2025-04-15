@@ -85,6 +85,9 @@ Completar 500 desafíos de programación en Python, mejorando habilidades reales
 - Exportar mejores soluciones a un repositorio pro
 - Hacer videos explicando mis soluciones (futuro)
 - Crear script automático para generar mensajes de commit por bloque (smart_commit.sh)
+- Crear un `README.md` dentro de `fundamentals/` que describa la organización de los temas teóricos.
+- Crear un `README.md` dentro de `challenges/code500/` que sirva como guía del reto de los 500 ejercicios.
+- Evaluar si se necesita un `README.md` adicional dentro de `00_spaced_review/` (ya existe una guía en `.md` con el sistema).
 
 ---
 
