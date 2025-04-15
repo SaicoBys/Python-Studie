@@ -154,6 +154,33 @@ estudiantes = {
 print(estudiantes["Ana"]["carrera"])  # Accede al valor anidado de 'carrera' de Ana
 
 # ========================================
+# Crear diccionarios a partir de dos listas usando zip() + dict()
+# ========================================
+
+"""
+Una forma práctica de construir un diccionario es usar la función `zip()` junto con `dict()`, especialmente cuando tienes dos listas: una con claves y otra con valores.
+
+🔹 `zip(lista1, lista2)` combina los elementos en pares:
+    zip(["A", "B", "C"], [1, 2, 3]) ➞ [("A", 1), ("B", 2), ("C", 3)]
+
+🔹 `dict()` convierte esa lista de tuplas en un diccionario:
+    dict([("A", 1), ("B", 2), ("C", 3)]) ➞ {"A": 1, "B": 2, "C": 3}
+"""
+
+# Ejemplo completo:
+letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M",
+           "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+
+points = [1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3,
+          4, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10]
+
+# Combinar usando zip() y dict()
+letters_points = dict(zip(letters, points))
+
+# Mostrar el diccionario resultante
+print(letters_points)
+
+# ========================================
 # Ejercicios de Práctica
 # ========================================
 

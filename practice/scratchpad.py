@@ -23,11 +23,14 @@ counter = 10
 while counter > 0:  # Mientras el contador sea mayor a 0
     print(counter)   # Imprime el valor actual del contador
     counter -= 1     # Disminuye el contador en 1 en cada iteración
+
 print("¡Despegue!")  # Cuando el loop termina, imprime "¡Despegue!"
 
 # Prueba: No necesita valores de entrada, se ejecuta directamente.
 
+
 # ----------------------------------------
+
 
 # Ejercicio 2: Solicitar número par
 # 🔹 Escribe un while loop que pida al usuario un número.
@@ -41,9 +44,11 @@ while True:
     if num % 2 == 0:  # Si el número es par (residuo 0 al dividir por 2)
         print("Número válido")
         break  # Sale del bucle
+
     print("Número inválido, intenta de nuevo")
 
 # Prueba: Ejecutar el código e ingresar diferentes números (pares e impares).
+
 
 # ========================================
 # 📝 Sección 2: Listas y Loops
@@ -65,7 +70,9 @@ def positive_nums(numbers):
 numbers = [3, -1, 5, 0, -8, 10, -2]
 print("Números positivos en la lista:", positive_nums(numbers))
 
+
 # ----------------------------------------
+
 
 # Ejercicio 4: Reemplazar negativos por cero
 # 🔹 Si un número es negativo, reemplázalo por 0.
@@ -78,9 +85,10 @@ def negatives_per_zero(my_list):
             my_list[i] = 0  # Lo reemplazamos por 0
     return my_list
 
-# Prueba con una lista
+# Prueba:
 numbers = [3, -1, 5, 0, -8, 10, -2]
 print("Lista modificada:", negatives_per_zero(numbers))
+
 
 # ========================================
 # 📝 Sección 3: Funciones
@@ -105,7 +113,9 @@ print(max_of_three(5, 5, 3))     # 5
 print(max_of_three(7, 2, 7))     # 7
 print(max_of_three(4, 4, 4))     # 4
 
+
 # ----------------------------------------
+
 
 # Ejercicio 6: Verificar si un número es primo
 
@@ -127,6 +137,7 @@ print(is_prime(10)) # False
 print(is_prime(23)) # True
 print(is_prime(25)) # False
 
+
 # ========================================
 # 📝 Sección 4: Desafíos Extras
 # ========================================
@@ -145,7 +156,9 @@ def invertir_lista(lista):
 numbers = [1, 2, 3, 4, 5]
 print("Lista invertida:", invertir_lista(numbers))  # [5, 4, 3, 2, 1]
 
+
 # ----------------------------------------
+
 
 # Ejercicio 8: Contar vocales en una palabra
 
@@ -164,6 +177,8 @@ print(contar_vocales("Python"))  # 1
 print(contar_vocales("AEIOU"))  # 5
 print(contar_vocales("rhythm"))  # 0
 
+
 # ========================================
 # Fin del Archivo de Práctica
 # ========================================
+
