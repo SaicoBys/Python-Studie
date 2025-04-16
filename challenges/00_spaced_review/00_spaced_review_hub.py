@@ -34,11 +34,41 @@
 
 # ✅ Ejercicio 1: Pedir una palabra al usuario y mostrarla en mayúsculas
 
+word = input("Escribe una palabra:")
+def user_input(word):
+    upper_word = word.upper()
+    return f'Esta es tu palabra en mayúsculas "{upper_word}"'
+
+print(user_input(word))
+
 # ✅ Ejercicio 2: Crear una función que devuelva la cantidad de vocales en un string
+
+def returning_vowels(word):
+    vowels = 'AEIOUaeiou'
+    vowels_counter = []
+    for vowel in vowels:
+        if vowel in word:
+            vowels_counter.append(vowel)
+    return vowels_counter
+
+print(returning_vowels("Jacob"))
+
 
 # ✅ Ejercicio 3: Mostrar los primeros 3 caracteres de una palabra
 
+def first_three_characters(word):
+    three_word = word[:3]
+    return f"Las 3 primeras letras de '{word}' son: '{three_word}'"
+
+print(first_three_characters("Jacob"))
+
 # ✅ Ejercicio 4: Concatenar dos strings separados por un espacio
+
+def uniendo_palabras(palabra1, palabra2):
+    resultado = palabra1 + " " + palabra2
+    return f"Frase resultante: {resultado}"
+
+print(uniendo_palabras("Hola", "Jacob"))
 
 
 # ========================================
