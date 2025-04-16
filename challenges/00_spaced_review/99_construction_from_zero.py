@@ -10,7 +10,9 @@
 # ❓ Desafío 01:
 # Crea una lista con al menos 3 colores y luego agrega uno nuevo al final.
 
-# ✍️ Tu código aquí:
+color_list = ["red", "blue", "green"]
+color_list.append("black")
+print(color_list)
 
 
 # ❓ Desafío 02:
