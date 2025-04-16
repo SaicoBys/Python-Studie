@@ -12,7 +12,12 @@ print("Desafío 039")
 Entrada: ...
 Salida esperada: ...
 """
-# Tu código aquí
+
+students = [
+    {"nombre": "Luis", "edad": 22, "calificaciones": [90, 85, 87]},
+    {"nombre": "Jacob", "edad": 25, "calificaciones": [95, 97, 88]},
+    {"nombre": "Nicole", "edad": 24, "calificaciones": [89, 94, 97]},
+]
 
 # ========================================
 # === 040: calcular_promedio_estudiante ===
@@ -28,7 +33,15 @@ print("Desafío 040")
 Entrada: ...
 Salida esperada: ...
 """
-# Tu código aquí
+
+def calcular_promedio_estudiante(student):
+    avg = 0
+    for calificacion in (students[student]["calificaciones"]):
+        avg += calificacion
+    avg /= len((students[student]["calificaciones"]))
+    return avg
+
+print(calcular_promedio_estudiante(2))
 
 # ========================================
 # === 041: agregar_calificacion ===
@@ -44,7 +57,14 @@ print("Desafío 041")
 Entrada: ...
 Salida esperada: ...
 """
-# Tu código aquí
+
+def agregar_calificacion(grade):
+    for student in students:
+        student["calificaciones"].append(grade)
+    return student["calificaciones"]
+
+print(agregar_calificacion(100))
+
 
 # ========================================
 # === 042: crear_diccionario_materias ===
