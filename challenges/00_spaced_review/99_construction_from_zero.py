@@ -18,7 +18,18 @@ print(color_list)
 # ❓ Desafío 02:
 # Recorre una lista de frutas y muestra solo aquellas con más de 5 letras.
 
-# ✍️ Tu código aquí:
+fruit_list = ["Mango", "Fresa", "Aguacante", "Chinola", "Lulo"]
+
+def counting_letter_fruits(fruits):
+    counter = 0
+    for fruit in fruits:
+        if fruits[fruit] > 5:
+            counter += 1
+    return counter
+
+print(counting_letter_fruits(fruit_list))
+
+
 
 
 # 🔤 BLOQUE 11–20: STRINGS
