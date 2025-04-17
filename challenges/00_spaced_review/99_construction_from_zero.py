@@ -21,11 +21,13 @@ print(color_list)
 fruit_list = ["Mango", "Fresa", "Aguacante", "Chinola", "Lulo"]
 
 def counting_letter_fruits(fruits):
-    counter = 0
-    for fruit in fruits:
-        if fruits[fruit] > 5:
-            counter += 1
-    return counter
+    lst = []
+    for index in fruits:
+        if len(index) > 5:
+            lst.append(index)
+    return lst
+
+
 
 print(counting_letter_fruits(fruit_list))
 

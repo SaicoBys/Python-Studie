@@ -79,7 +79,10 @@ print("Desafío 042")
 Entrada: ...
 Salida esperada: ...
 """
-# Tu código aquí
+
+subjects = {
+    "math": ["Jacob", "Nicole", "Rosa", "Laura", "Joshua"]
+}
 
 # ========================================
 # === 043: nombres_estudiantes_mayores_20 ===

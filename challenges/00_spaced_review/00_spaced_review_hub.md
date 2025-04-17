@@ -80,6 +80,7 @@ Escribe aquí lo que más te cuesta, dudas que debes volver a revisar o trucos q
 
 - ❗ A veces olvido usar `.append()` correctamente.
 - 🔁 Recordar que `for item in lista:` es diferente a `for i in range(len(lista)):`
+- ❗ Olvide como contar letras con un for.
 
 ---
 
