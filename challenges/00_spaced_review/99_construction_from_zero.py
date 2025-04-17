@@ -27,12 +27,7 @@ def counting_letter_fruits(fruits):
             lst.append(index)
     return lst
 
-
-
 print(counting_letter_fruits(fruit_list))
-
-
-
 
 # 🔤 BLOQUE 11–20: STRINGS
 

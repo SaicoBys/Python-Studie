@@ -85,6 +85,12 @@ print(uniendo_palabras("Hola", "Jacob"))
 
 # ✅ Ejercicio 1: Imprimir los números del 1 al 10 usando for
 
+def printing_numbers(num1, num2):
+    list_numbers = list(range(num1, num2 + 1))
+    return list_numbers
+
+print(printing_numbers(1, 10))
+
 # ✅ Ejercicio 2: Contar hacia atrás desde 10 hasta 1 usando while
 
 # ✅ Ejercicio 3: Recorre una lista y salta los múltiplos de 3 usando continue
