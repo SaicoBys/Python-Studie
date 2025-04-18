@@ -93,6 +93,12 @@ print(printing_numbers(1, 10))
 
 # ✅ Ejercicio 2: Contar hacia atrás desde 10 hasta 1 usando while
 
+num1 = 10
+while num1 > 0:
+    print(num1)
+    num1 -= 1
+
+
 # ✅ Ejercicio 3: Recorre una lista y salta los múltiplos de 3 usando continue
 
 # ✅ Ejercicio 4: Pedir al usuario números hasta que escriba 0 y sumar todos los valores introducidos
