@@ -34,7 +34,10 @@ print(counting_letter_fruits(fruit_list))
 # ❓ Desafío 03:
 # Solicita al usuario una palabra y devuélvela toda en mayúsculas.
 
-# ✍️ Tu código aquí:
+def upper_string(word):
+    return word.upper()
+
+print(upper_string("Jacob"))
 
 
 # ❓ Desafío 04:
