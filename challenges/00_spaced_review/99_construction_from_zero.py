@@ -43,8 +43,12 @@ print(upper_string("Jacob"))
 # ❓ Desafío 04:
 # Escribe una función que reciba un string y devuelva el número de vocales.
 
-# ✍️ Tu código aquí:
-
+def count_strings(word):
+    counter = 0
+    for index in word:
+        counter += 1
+    return counter
+print(count_strings("Nicole"))
 
 # 🔁 BLOQUE 21–30: LOOPS
 
