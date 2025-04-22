@@ -98,7 +98,10 @@ print("Desafío 043")
 Entrada: ...
 Salida esperada: ...
 """
-# Tu código aquí
+
+mayores_de_20 = [est["nombre"] for est in students if est["edad"] > 20]
+
+print(mayores_de_20)
 
 # ========================================
 # === 044: diccionario_promedios ===
