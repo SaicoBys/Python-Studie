@@ -1,116 +1,155 @@
-# 📝 Commit Message Template Guide
+# 📝 Guía de Plantilla para Mensajes de Commit en Git
 
-I use this template to write clear, meaningful Git commit messages for my projects.
+Utilizo esta plantilla para escribir mensajes de commit claros y significativos en mis proyectos.
 
-## ✍️ Estructura básica del mensaje de commit
+---
 
-```
-<tipo>: <descripción breve y significativa>
-```
+## ⚙️ Estructura Básica del Mensaje de Commit
 
-## 🗂️ Tipos de commits comunes y útiles
-
-- `feat:` Una nueva funcionalidad.
-- `fix:` Corrección de un bug.
-- `docs:` Cambios en la documentación.
-- `style:` Formato (espacios, comas, etc.) sin cambios en la lógica del código.
-- `refactor:` Refactorización de código sin cambiar su comportamiento.
-- `test:` Añadir o corregir pruebas.
-- `chore:` Tareas que no modifican el código de producción (actualizar dependencias, etc.)
-- `ci:` Cambios relacionados con integración continua (GitHub Actions, workflows).
-- `build:` Cambios en dependencias, compilación o configuración de entorno.
-- `perf:` Mejoras de rendimiento sin alterar el comportamiento.
-- `revert:` Reversión de un commit anterior.
-- `content:` Añadir contenido nuevo como soluciones de ejercicios o texto.
-- `log:` Cambios en mensajes de consola o depuración (prints, logging).
-- `temp:` Cambios temporales con intención de eliminar más adelante.
-- `structure:` Reorganización de archivos, carpetas o convenciones.
-
-## 🧩 Plantillas específicas para cada tipo de commit
-
-### `feat:` Nueva funcionalidad
 ```bash
-feat: add [feature] to [section]
+<tipo>(<scope>): <descripción breve y significativa>
+```
+
+**Ejemplo:**
+
+```bash
+feat(settings): add dark mode toggle
+```
+
+---
+
+## 🗂️ Tipos Comunes de Commits y Ejemplos
+
+| Tipo      | Descripción                                                       | Ejemplo                                       |
+|-----------|-------------------------------------------------------------------|-----------------------------------------------|
+| `feat`    | Nueva funcionalidad                                               | `feat(login): add OAuth2 support`              |
+| `fix`     | Corrección de un bug                                              | `fix(loop): correct off-by-one error`          |
+| `docs`    | Cambios en documentación                                          | `docs(readme): update installation guide`     |
+| `style`   | Formato o estilo sin afectar lógica                              | `style(code): format according to PEP8`       |
+| `refactor`| Refactorización sin cambiar comportamiento                       | `refactor(auth): simplify token validation`   |
+| `test`    | Añadir o corregir pruebas                                         | `test(utils): add tests for string parser`    |
+| `chore`   | Tareas de mantenimiento o sin impacto en código de producción   | `chore(deps): update dependencies`             |
+| `ci`      | Cambios en integración continua                                  | `ci(workflow): add lint check`                  |
+| `build`   | Cambios en dependencias o configuración de entorno               | `build(docker): update base image`              |
+| `perf`    | Mejoras de rendimiento                                           | `perf(api): optimize query execution`           |
+| `revert`  | Reversión de un commit anterior                                  | `revert: revert "feat(login): add OAuth2 support"` |
+| `content` | Añadir contenido nuevo (ejercicios, texto)                       | `content(exercises): add solution for challenge 024` |
+| `log`     | Cambios en mensajes de consola o debug                           | `log(debug): add verbose output`                 |
+| `temp`    | Cambios temporales con intención de eliminar después            | `temp: disable feature X temporarily`            |
+| `structure`| Reorganización de archivos o carpetas                           | `structure: move utils to helpers folder`        |
+
+---
+
+## 🧩 Plantillas y Ejemplos Detallados por Tipo
+
+### `feat:` Nueva Funcionalidad
+
+```bash
+feat(<scope>): add [feature] to [section]
 # Ejemplo:
-feat: add dark mode toggle to settings menu
+feat(settings): add dark mode toggle
 ```
 
-### `fix:` Corrección de errores
+---
+
+### `fix:` Corrección de Errores
+
 ```bash
-fix: fix [bug or issue] in [module or component]
+fix(<scope>): fix [bug or issue] in [module or component]
 # Ejemplo:
-fix: fix off-by-one error in loop iteration
+fix(loop): correct off-by-one error
 ```
 
-### `docs:` Cambios en documentación
+---
+
+### `docs:` Cambios en Documentación
+
 ```bash
-docs: update [topic or file] with more details/examples
+docs(<scope>): update [topic or file] with more details/examples
 # Ejemplo:
-docs: update Variables.py with clearer type examples
+docs(readme): add installation instructions
 ```
 
-### `style:` Formato o estilo
+---
+
+### `style:` Formato o Estilo
+
 ```bash
-style: format [file or section] for readability
+style(<scope>): format [file or section] for readability
 # Ejemplo:
-style: format DataTypes.py according to PEP8
+style(code): format according to PEP8
 ```
 
-### `refactor:` Mejora de código sin cambiar su función
+---
+
+### `refactor:` Mejora de Código sin Cambiar Función
+
 ```bash
-refactor: simplify [function or logic block] in [file]
+refactor(<scope>): simplify [function or logic block]
 # Ejemplo:
-refactor: simplify validation logic in Errors.py
+refactor(auth): simplify token validation logic
 ```
 
-### `test:` Tests nuevos o ajustados
+---
+
+### `test:` Tests Nuevos o Ajustados
+
 ```bash
-test: add tests for [function or module]
+test(<scope>): add tests for [function or module]
 # Ejemplo:
-test: add tests for is_even() in Operators.py
+test(utils): add tests for string parser
 ```
 
-### `chore:` Mantenimiento u otras tareas
+---
+
+### `chore:` Mantenimiento y Otras Tareas
+
 ```bash
-chore: rename [folder or file] to match new structure
+chore(<scope>): rename [folder or file] to match new structure
 # Ejemplo:
-chore: rename VariablesAndDataTypes to 01_Variables_And_DataTypes
+chore(project): update dependencies
 ```
 
-## ✅ Ejemplos reales de mensajes
+---
+
+## ✅ Ejemplos Reales de Mensajes de Commit
 
 ```bash
-feat: add input validation to registration form
-fix: correct typo in email validation regex
-docs: add explanation for sorting algorithm in README
-style: format code according to PEP8
-refactor: simplify loop logic in shipping calculation
-test: add unit tests for new thread color counter
-chore: update pip dependencies
+feat(user): add input validation to registration form
+fix(email): correct typo in validation regex
+docs(readme): add sorting algorithm explanation
+style(code): format according to PEP8
+refactor(cart): simplify loop logic in shipping calculation
+test(thread): add unit tests for color counter
+chore(deps): update pip dependencies
 ```
 
-## 🧪 Flujo de trabajo personal con Git
+---
 
-1. Escribo soluciones o actualizo los archivos.
-2. Guardo cambios en VS Code.
-3. Luego corro este comando desde cualquier parte del proyecto:
+## 🧪 Flujo de Trabajo Personal con Git
+
+1. Escribo o actualizo archivos.
+2. Guardo cambios en el editor (VS Code).
+3. Ejecuto desde cualquier parte del proyecto:
 
 ```bash
-gitup "Added solution for challenge 024: string_length"
+gitup "feat(exercises): add solution for challenge 024 string_length"
 ```
 
 4. Esto ejecuta el script `scripts/upload_to_github.sh` con el mensaje de commit proporcionado.
 
-## ✅ Comandos útiles de Git
+---
+
+## ✅ Comandos Útiles de Git
 
 ```bash
-git add nombre_del_archivo.py
-git commit -m "feat: add solución para challenge 025"
+git add <archivo>
+git commit -m "feat(scope): descripción"
 git push
 ```
 
 O usando mi alias personalizado:
 
 ```bash
-gitup "Added solution for challenge 025: iterate_string"
+gitup "feat(exercises): add solution for challenge 025 iterate_string"
 ```
