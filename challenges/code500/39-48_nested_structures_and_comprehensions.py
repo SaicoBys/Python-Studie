@@ -117,7 +117,10 @@ print("Desafío 044")
 Entrada: ...
 Salida esperada: ...
 """
-# Tu código aquí
+promedios = {
+    estudiante["nombre"]: sum(estudiante["calificaciones"]) / len(estudiante["calificaciones"])
+    for estudiante in students
+}
 
 # ========================================
 # === 045: filtrar_estudiantes_promedio ===
