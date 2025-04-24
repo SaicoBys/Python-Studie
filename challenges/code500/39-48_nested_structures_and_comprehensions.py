@@ -121,6 +121,7 @@ promedios = {
     estudiante["nombre"]: sum(estudiante["calificaciones"]) / len(estudiante["calificaciones"])
     for estudiante in students
 }
+print(promedios)
 
 # ========================================
 # === 045: filtrar_estudiantes_promedio ===
@@ -136,7 +137,12 @@ print("Desafío 045")
 Entrada: ...
 Salida esperada: ...
 """
-# Tu código aquí
+
+filtered_students = [estudiante for estudiante in students if sum(estudiante["calificaciones"]) / len(estudiante["calificaciones"]) > 85]
+
+print(filtered_students)
+                     
+
 
 # ========================================
 # === 046: aplanar_lista_de_listas ===
