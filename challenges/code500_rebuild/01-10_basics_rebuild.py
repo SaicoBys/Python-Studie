@@ -105,6 +105,15 @@ Entrada: 12, 13, 15
 Salida esperada: 15
 """
 
+def get_max_of_three(num1, num2, num3):
+    if num1 > num2 and num1 > num3:
+        return num1
+    elif num2 > num1 and num2 > num3:
+        return num2
+    else:
+        return num3
+
+print(get_max_of_three(12, 13, 9))
 
 # ========================================
 # === 006: ordenar_lista ===
